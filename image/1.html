@@ -1,0 +1,2997 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-TDLHFJW':true});</script>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="ae7IKwvbIGQUUPcr13/B0Mi+q6zAFNLnVs76gtmhmIONta5zM0vlB+APscZ6IgXFnG/OHy5wX0/prBGXBKHaUw==" />
+
+    <meta charset="utf-8">
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"61ba2670c3","applicationID":"401368261","transactionName":"cw5cRENcWF1cSxlHR1EVW1MeUkZFUFpaUWxDCV1H","queueTime":0,"applicationTime":459,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={xpid:"VgIBUFJQCxAEVFBRAQkFUFU=",licenseKey:"61ba2670c3",applicationID:"401368261"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(23),c={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,i.indexOf("dev")!==-1&&(c.dev=!0),i.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&o.on("internal-error",function(t){r(t.stack)}),c.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:i(c||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:s.now();o("err",[t,n])}var o=t("handle"),a=t(24),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),s.xhrWrappable&&t(10),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){o("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var i=t("ee"),o=t("handle"),a=t(9),c=t(8),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;i.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),i.on(w,function(t,e){var n=t[0];n instanceof x&&o("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),i.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),i.on(g+h,function(t){o("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){c.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return i.emit(n+"start",[t,a],c),c.then(function(t){return i.emit(n+"end",[null,t],c),t},function(t){throw i.emit(n+"end",[t],c),t})})}var i=t("ee").get("fetch"),o=t(24),a=t(23);e.exports=i;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),i.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(s+"done",[null,e],n)}else i.emit(s+"done",[t],n)}))},{}],7:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],9:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(s+u,r),o.on(c+u,i)},{}],10:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function o(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(v,i,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),w=Date.now(),v={spanId:h,traceId:m,timestamp:w};return(t.sameOrigin||s(t)&&l())&&(v.traceContextParentHeader=i(h,m),v.traceContextStateHeader=o(h,w,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(v.newrelicHeader=a(h,m,w,n,r,f)),v}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",c=1,s="",f="";return i+"@nr="+o+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(c.d.tk=o),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(20),h=t(13);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],12:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function o(t,e){t.params.status=e.status;var n=w(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){o(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof v&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)})}},{}],13:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||c),"/"===i.pathname&&(r[t]=i),i}},{}],14:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(16);e.exports=r},{}],15:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(23),c=t(24),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=i(l+e,!0,"api")}),u.addPageAction=i(l+"addPageAction",!0),u.setCurrentRouteName=i(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=i(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,f.now(),!1,e])}},{}],16:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],17:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],18:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(25);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],19:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!w){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),w=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(22),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var w=!1,v=["click","keydown","mousedown","pointerdown","touchstart"];v.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],20:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<o.length;c++)i=o[c],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],21:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=s[1])}e.exports={agent:i,version:o,match:r}},{}],22:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],23:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],24:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],25:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,s,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),s=m(n),f=s.length,u=0;u<f;u++)s[u].apply(c,r);var l=d[y[n]];return l&&l.push([x,n,r,c]),c}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function w(t){return l[t]=l[t]||i(n)}function v(t,e){u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:w,listeners:m,context:e,buffer:v,abort:c,aborted:!1};return x}function o(t){return f(t,s,a)}function a(){return new r}function c(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var s="nr@context",f=t("gos"),u=t(23),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(g,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=t(18),c=t("handle"),s=t(23),f=t("ee"),u=t(21),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},y=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:a.getLastTimestamp(),now:a,origin:v,features:{},xhrWrappable:y,userAgent:u};t(15),t(19),l[p]?(l[p]("DOMContentLoaded",o,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",i),d[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var b=0},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,s,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,s],u],t)}c(n+"start",[o,a,s],u,f);try{return l=e.apply(a,o)}catch(h){throw c(n+"err",[o,a,h],u,f),h}finally{c(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,s,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)s=e[f],c=t[s],a(c)||(t[s]=n(c,u?s+r:r,i,s,o))}function c(n,r,o,a){if(!h||e){var c=h;h=!0;try{t.emit(n,r,o,e,a)}catch(s){i([s,n,r,o],t)}h=c}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function c(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function s(t,e,n){var r=t[e];t[e]=c(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(24),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=s,e.exports.argsToArray=f},{}]},{},["loader",2,12,4,3]);</script>
+<title>自転車を安く買うならどこの通販サイト？2万円以下の格安自転車も紹介 | 自転車通販「cyma -サイマ-」人気自転車が最大30%OFF！</title>
+<link rel="icon" type="image/x-icon" href="https://res.cyclemarket.jp/images/favicon.ico?modify=20210205071106">
+<link rel="apple-touch-icon" type="image/jpg" href="https://res.cyclemarket.jp/images/apple-touch-icon.png?modify=20210205071106" sizes="144x144">
+<meta name="description" content="「こだわりはないけれど、安くて使いやすい自転車を買いたい」人必見！品質の心配がいらない2万円以下の格安自転車や、1万円以下の激安自転車はおすすめできない理由を紹介しています。">
+<meta name="keywords" content="自転車　安い　通販">
+<link rel="canonical" href="https://cyclemarket.jp/static/article/1/130">
+<meta property="og:site" content="自転車通販「cyma -サイマ-」人気自転車が最大30%OFF！">
+<meta property="og:title" content="自転車通販「cyma -サイマ-」人気自転車が最大30%OFF！">
+<meta property="og:description" content="自転車買うなら自転車専門通販のサイマ！プロの自転車整備士が組立て整備してお届け。さらに常時10,000台以上を取り扱い。電動自転車、折りたたみ自転車、クロスバイク、ロードバイク、子乗せ自転車からパーツまで豊富な品揃え。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cyclemarket.jp/static/article/1/130">
+<meta property="og:image" content="https://res.cyclemarket.jp/images/cyma1200_630.png?modify=20210205071106">
+<meta property="og:locale" content="ja_JP">
+    <link rel="stylesheet" media="all" href="/assets/pc/common-135241095eea9788708f01d89b51fd67da069f21daf0b496d3b4fcffe552c61d.css" data-turbolinks-track="reload" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+      <link rel="stylesheet" media="all" href="/assets/pc/static_prior-bcf209b9ec1d88836ed0e5dac79636632c938e408f0338a824725878a7286b3c.css" data-turbolinks-track="reload" />
+  <link rel="stylesheet" media="all" href="/assets/pc/article-e7607125592db9d80a78849f394e9c4c1145d0becfee845abcd87dd14abcd92b.css" data-turbolinks-track="reload" />
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TDLHFJW');</script>
+
+    
+    <script src="https://browser.sentry-cdn.com/5.6.2/bundle.min.js" integrity="sha384-H4chu/XQ3ztniOYTpWo+kwec6yx3KQutpNkHiKyeY05XCZwCSap7KSwahg16pzJo" crossorigin="anonymous"></script>
+    <script>Sentry.init({"dsn":"https://fc90397cbc1d4d6c8f7da6129bc23f29@api.sentry.cyclemarket.jp/34","environment":"production","release":""});</script>
+
+  </head>
+  <body class="odd2">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDLHFJW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    "customer": "",
+    "abTest1": "1",
+    "abTest2": "1",
+    "abTest3": "1",
+    "abcTest1": "0",
+    "abcTest2": "1",
+    "abcTest3": "1"
+  });
+</script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46077488-1']);
+  _gaq.push(['_setVar', '']);
+  _gaq.push(['_setCustomVar', 1, 'cv1', '3314871596293527', 1]);
+  _gaq.push(['_setCustomVar', 2, 'dcode', 'seo_g_art130', 1]);
+  _gaq.push(['_setCustomVar', 3, 'ab', '1', 1]);
+  _gaq.push(['_setCustomVar', 4, 'ab2', '1', 1]);
+  _gaq.push(['_setCustomVar', 5, 'abc', 'abc_0:abc2_1', 1]);
+  _gaq.push(['_setCustomVar', 6, 'ab3', '1', 1]);
+  _gaq.push(['_setDomainName', 'cyclemarket.jp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+    
+    <div id="container" >
+      <div id="cy-lo-static-article_show" class="wrap ">
+        
+          <header id="header" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_global'])">
+  
+  <div class="content-wrap header cf">
+    <div id="logo">
+      <a href="/"><img alt="自転車を買うなら自転車通販サイト「cyma -サイマ-」" src="https://res.cyclemarket.jp/images/common/logo_2x.png?modify=20210205071106" /></a>
+      <p class="tagline">
+        <a href="/guide/welcome" data-category="click_static_article_show" data-action="no1" data-label="logo"><img alt="ネット専門の自転車総合通販サイト 年間売上No.1" src="https://res.cyclemarket.jp/images/common/no1/no1_pc.png?modify=20210205071106" /></a>
+      </p>
+    </div>
+    <nav id="nav-header-v2">
+      <div class="wrap support">
+        <div class="contact-wrap">
+          <div class="jpx-mark">
+            <div class="image">
+              <img width="100%" src="https://res.cyclemarket.jp/images/common/logo__jpx.png?modify=20210205071106" alt="東証一部上場">
+            </div>
+          </div>
+          <div class="contact-phone">
+            <p class="tel-number-p">
+              <span class="text-link"><a href="/guide/payment">組立配送料について</a></span>
+              <span class="text-link"><a href="/guide/payment#internal-link-payment">お支払方法</a></span>
+              <span class="text-link"><a href="/track/index">配送状況の確認</a></span>
+            </p>
+            <p><a class="text-link" href="/contact/faq">よくあるご質問・お問い合わせフォーム</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="wrap header-menu">
+        <ul class="mypage">
+          <li class="mypage-home">
+            <a class="item" href="/mypage/index"><span class="text">マイページ</span></a>
+          </li>
+        </ul>
+        <div class="cart-wrapper">
+          <ul class="cart">
+            <li>
+              <a class="item" href="/cart/index">
+                <span class="text">カート</span><span class="js-cartProductCount num"></span>
+              </a>
+            </li>
+          </ul>
+          <div class="notice-alert in-message js-noticeAlert">
+  <p class="head-message message-option">
+    <span class="header-message js-headerMessage"></span>
+    <span class="note js-headerMessageNote"></span>
+  </p>
+  <p class="top-message js-topMessage"></p>
+  <img class="main-image js-mainImage" src="" alt="product_name" width="100%" />
+  <div class="product-info">
+    <p class="name">
+      <span class="short-name js-noticeAlertTopShortName"></span>
+      <a class="detail-link js-noticeAlertDetailLink" href="" onclick="_gaq.push(['_trackEvent', 'global_header_footer', 'cart_notice_alert_pc-link_to_detail-cart_product.product_id']);">
+        <span class="detail-link">&raquo;商品の詳細を見る</span>
+      </a>
+    </p>
+    <div class="price">
+      <div class="price-area">
+        <p class="align-left note"><span class="note"></span></p>
+        <p class="price-amount">
+          <span>&yen;</span>
+          <span class="product-price js-noticeAlertProductPrice"></span>
+          <span class="note">(税別)</span>
+        </p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <p class="message ship-message js-noticeAlertShipMessage">最短翌日～3営業日前後で出荷</p>
+    <a href="/cart/index" onclick="_gaq.push(['_trackEvent', 'global_header_footer', 'cart_notice_alert_pc']);">
+      <p class="link-button"><span class="btn">ご購入手続きに進む</span></p>
+    </a>
+  </div>
+  <span class="cy-cart-notice-close close in-message no-message js-noHeaderMessage">&times;</span>
+</div>
+
+          <div class="notice-alert no-message js-noticeAlertNoMessage">
+  <a href="/cart/index" onclick="_gaq.push(['_trackEvent', 'global_header_footer', 'cart_notice_alert_pc']);">
+    <span class="js-inCartProductCount">カートに入れた商品が点あります！ご購入はこちら！</span>
+    <span class="margin-l10 btn">カートを見る</span>
+  </a>
+  <span class="cy-cart-notice-close close" onclick="_gaq.push(['_trackEvent', 'global_header_footer', 'close_cart_notice_alert_pc']);">&times;</span>
+</div>
+
+
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="content-wrap nav">
+    <nav id="nav-global">
+      <ul class="menu">
+        <li><a class="item category-1" href="/product/category_1/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;an_nav_global&#39;,&#39;category_1&#39;])"><span class="caption">シティサイクル</span></a></li>
+        <li><a class="item category-8" href="/product/category_8/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;an_nav_global&#39;,&#39;category_8&#39;])"><span class="caption">電動自転車</span></a></li>
+        <li><a class="item category-64" href="/product/category_64/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;an_nav_global&#39;,&#39;category_64&#39;])"><span class="caption">子供乗せ自転車</span></a></li>
+        <li><a class="item category-4" href="/product/category_4/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;an_nav_global&#39;,&#39;category_4&#39;])"><span class="caption">スポーツ自転車</span></a></li>
+        <li><a class="item category-2" href="/product/category_2/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;an_nav_global&#39;,&#39;category_2&#39;])"><span class="caption">ミニベロ（小径車）</span></a></li>
+        <li><a class="item category-32" href="/product/category_32/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;an_nav_global&#39;,&#39;category_32&#39;])"><span class="caption">折りたたみ自転車</span></a></li>
+        <li><a class="item category-16" href="/product/category_16/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;an_nav_global&#39;,&#39;category_16&#39;])"><span class="caption">こども用自転車</span></a></li>
+        <li><a class="item category-outlet" href="/product/outlet_list" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;an_nav_global&#39;,&#39;category_outlet&#39;])"><span class="caption">アウトレット</span></a></li>
+        <li><a class="item category-parts" href="/parts/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;an_nav_global&#39;,&#39;category_parts&#39;])"><span class="caption">パーツ</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="header-cyma-storongpoint-banner">
+    <div class="header-cyma-storongpoint-banner-image">
+      <a href="/guide/welcome" data-category="click_static_article_show" data-action="no1" data-label="header_banner" class="header-cyma-storongpoint-link">
+          <p class="header-cyma-storongpoint-h1">
+            ネット専門の自転車総合通販サイト
+            <span class="no1">年間売上No.1<span class="no1-attention">(※1)</span></span>
+            cyma-サイマ-の詳しいサービス内容は
+            <span class="link">コチラ！</span>
+          </p>
+      </a>
+    </div>
+  </div>
+
+    <div class="keywordSearch">
+      <div class="keywordSearchWrap">
+        <form class="keywordSearchWrap__container" action="/product/search" accept-charset="UTF-8" method="get">
+          <input type="text" name="keyword" id="keyword-search" class="keywordSearch__box" placeholder="電動自転車" required="required" cy-suggest-action="/product/suggest" data-category="click_static_article_show" data-action="keyword_search" data-label="text" />
+          <input type="submit" value="検索" class="keywordSearch__btn" data-category="click_static_article_show" data-action="keyword_search" data-label="submit" data-disable-with="検索" />
+</form>      </div>
+      <div class="keywordSearch__word">
+        <p class="keywordSearch__popular">人気キーワード</p>
+        <ul class="keywordSearchWordLists">
+            <li class="keywordSearchWordLists__list">
+              <a href="/product/search?keyword=%E9%9B%BB%E5%8B%95%E8%87%AA%E8%BB%A2%E8%BB%8A" data-category="click_static_article_show" data-action="keyword_search" data-label="popular_keyword_電動自転車">
+                <span class="keywordSearchWordLists__text">電動自転車</span>
+              </a>
+            </li>
+            <li class="keywordSearchWordLists__list">
+              <a href="/product/search?keyword=%E3%81%8A%E3%81%97%E3%82%83%E3%82%8C" data-category="click_static_article_show" data-action="keyword_search" data-label="popular_keyword_おしゃれ">
+                <span class="keywordSearchWordLists__text">おしゃれ</span>
+              </a>
+            </li>
+            <li class="keywordSearchWordLists__list">
+              <a href="/product/search?keyword=%E9%80%9A%E5%8B%A4" data-category="click_static_article_show" data-action="keyword_search" data-label="popular_keyword_通勤">
+                <span class="keywordSearchWordLists__text">通勤</span>
+              </a>
+            </li>
+            <li class="keywordSearchWordLists__list">
+              <a href="/product/search?keyword=%E9%80%9A%E5%AD%A6" data-category="click_static_article_show" data-action="keyword_search" data-label="popular_keyword_通学">
+                <span class="keywordSearchWordLists__text">通学</span>
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+</header>
+
+        <div id="header-etc-wrap" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_global'])">
+  </div>
+
+        
+          <nav id="breadcrumb">
+              <ul>
+    <li><a href="/">自転車通販のcyma -サイマ-</a></li>
+      <li>自転車を安く買うならどこの通販サイト？2万円以下の格安自転車も紹介</li>
+  </ul>
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item":{
+          "@id": "https://cyclemarket.jp/",
+          "name": "自転車通販のcyma -サイマ-"
+        }
+      },
+      {"@type":"ListItem","position":2,"item":{"@id":"https://cyclemarket.jp/static/article/1/130","name":"自転車を安く買うならどこの通販サイト？2万円以下の格安自転車も紹介"}}
+    ]
+  }
+  </script>
+
+          </nav>
+        <div id="content" class="fixed-sidebar">
+            <div id="main" class="lo-left">
+              <section id="static-article_show" class="cy-lo-static">
+                
+
+
+
+
+
+<div class="cy-article article">
+  <section>
+    <div class="main-content">
+      <div class="post">
+	<h1>自転車を安く買うならどこの通販サイト？2万円以下の格安自転車も紹介</h1>
+    <img alt="自転車 安い 通販" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/AM-033/AM-033_m_14.jpg">
+    <p>
+        「こだわりはないから、とにかく安く済ませたい」<br>
+        「家の近くに自転車屋ないし、通販で安く買えないかな」<br>
+        「安くて機能面でも納得できる自転車がほしい！」
+      </p>
+      <p>
+            機能やデザインに納得のいく自転車を安く買えたら嬉しい反面、安すぎる自転車はデメリットがないか気になりますよね。<br>
+            特に通販で探してみると、１万円をきる自転車もちらほら。<br>
+            ただよく見てみると、配送地域が限られていたり、自分で組立てなければいけなかったり、安い自転車ほど不便なことが多いです。<br>
+            調べれば調べるほど、結局どこで買うべきなのか分からなくなってしまうでしょう。<br>
+            そこでこの記事では、<span class="marker">通販で安い自転車を買う前に知っておいてほしい2つのこと</span>を紹介します。
+          </p>
+<dl class="article-summary">
+    <dt>この記事の内容
+    </dt>
+    <dd>
+        <ul>
+                <li>通販で自転車を買うときに注意してほしいポイント</li>
+            <li>1万円以下の激安自転車がおすすめできない理由</li>
+        </ul>
+    </dd>
+</dl>
+<p>
+        記事の後半に、通販で買える予算2～3万円のお値打ちな自転車も紹介しているので、ぜひ納得のいく一台を探してみてください。
+      </p>
+      <p><a href="#4">すぐに安い自転車をチェックしたい人はこちら&gt;&gt;</a></p>
+      <p><span class="font-sm">（※本文中に記載されている価格は2019年12月04日時点のものです。)</span></p>
+
+ <div class="align-center margin-b15">
+    <a href="https://cyclemarket.jp/guide/welcome" data-category="click_article" data-action="bnr_no1" data-label="60">
+      <img alt="ネット専門の自転車総合通販サイト年間売上No1" class="main-img cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/common/no1/banner_rotation_sp.png?modify=20200603015153">
+    </a>
+  </div>
+
+ <h2 id="0">【ランキング】この記事を見た人によく買われている商品</h2>
+  <ul class="product-ranking">
+            <li>
+      <a href="https://cyclemarket.jp/product/detail/415" data-category="click_article" data-action="ranking_130" data-label="product_415">
+        <dl>
+          <dt><img alt="カゴ付きMARKROSA 7S" class="img-thumb cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/M/MRS77T-BK/MRS77T-BK_m_16.jpg?modify=20200706040929"></dt>
+          <dd>
+            <p class="product-name">カゴ付きMARKROSA 7S</p>
+            <p class="product-price">¥48,900 (税別)</p>
+          </dd>
+        </dl>
+      </a>
+    </li>
+                    <li>
+      <a href="https://cyclemarket.jp/product/detail/335" data-category="click_article" data-action="ranking_130" data-label="product_335">
+        <dl>
+          <dt><img alt="cavite(キャビテ)" class="img-thumb cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/S/SK-CAVITE/SK-CAVITE_m_07.jpg?modify=20200710013825"></dt>
+          <dd>
+            <p class="product-name">cavite(キャビテ)</p>
+            <p class="product-price">¥35,980 (税別)</p>
+          </dd>
+        </dl>
+      </a>
+    </li>
+        <li>
+      <a href="https://cyclemarket.jp/product/detail/721" data-category="click_article" data-action="ranking_130" data-label="product_721">
+        <dl>
+          <dt><img alt="Dia Resto" class="img-thumb cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/AM-033/AM-033_m_13.jpg?modify=20200706040929"></dt>
+          <dd>
+            <p class="product-name">Dia Resto</p>
+            <p class="product-price">¥27,980 (税別)</p>
+          </dd>
+        </dl>
+      </a>
+    </li>
+ <li>
+      <a href="https://cyclemarket.jp/product/detail/392" data-category="click_article" data-action="ranking_130" data-label="product_392">
+        <dl>
+          <dt><img alt="ComO'rade(コモラード)" class="img-thumb cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/ATM009/ATM009_m_07.jpg?modify=20200706040929"></dt>
+          <dd>
+            <p class="product-name">ComO'rade(コモラード)</p>
+            <p class="product-price">¥25,980 (税別)</p>
+          </dd>
+        </dl>
+      </a>
+    </li>
+       <li>
+      <a href="https://cyclemarket.jp/product/detail/370" data-category="click_article" data-action="ranking_130" data-label="product_370">
+        <dl>
+          <dt><img alt="ヴォラーレ" class="img-thumb cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/S/SST-CR276V-HD/SST-CR276V-HD_m_04.jpg?modify=20200706040929"></dt>
+          <dd>
+            <p class="product-name">ヴォラーレ</p>
+            <p class="product-price">¥29,980 (税別)</p>
+          </dd>
+        </dl>
+      </a>
+    </li>
+
+           <li>
+      <a href="https://cyclemarket.jp/product/detail/386" data-category="click_article" data-action="ranking_130" data-label="product_386">
+        <dl>
+          <dt><img alt="SIGNE(シグネ)" class="img-thumb cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/ATM013/ATM013_m_05.jpg?modify=20200710091820"></dt>
+          <dd>
+            <p class="product-name">SIGNE(シグネ)</p>
+            <p class="product-price">¥23,980 (税別)</p>
+          </dd>
+        </dl>
+      </a>
+    </li>
+  </ul>
+  <p>
+    <span class="font-sm">（※2020年7月10日時点のランキングです。価格は現在と異なる場合がございます。）</span><br>
+  </p>
+
+<div class="table_of_contents">
+	<p class="table_of_contents__title">目次</p>
+	<ul>
+        <li>
+<a href="#1">通販で安い自転車を買うなら配送料と防犯登録に注意！</a>
+            <ul>
+                <li><a href="#1-1">ポイント1.配送料と税を含めた価格で比較する</a></li>
+                <li><a href="#1-2">ポイント2.防犯登録の料金が別途で必要</a></li>
+            </ul>
+        </li>
+        <li>
+<a href="#2">1万円以下の激安自転車はおすすめできない2つの理由</a>
+            <ul>
+                    <li><a href="#2-1">理由1.完成された状態で届かない</a></li>
+                    <li><a href="#2-2">理由2.壊れても修理してもらえない可能性がある</a></li>
+                </ul>
+            </li>
+		<li><a href="#3">【予算2万円以下】価格重視の人におすすめの安い自転車3選</a></li>
+		<li><a href="#4">【予算3万円以下】通販で買えるおしゃれでコスパのいい自転車</a></li>
+		<li><a href="#5">まとめ</a></li>
+		<li><a href="#6">通販で買える安い自転車のちょっと気になるQ&amp;Aを紹介</a></li>
+	</ul>
+</div>
+<h2 id="1">通販で安い自転車を買うなら配送料と防犯登録に注意！</h2>
+<img alt="price" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/static/article/curation/57_04.png">
+<p>
+        安い自転車を通販で買うとなると、表示価格はもちろん、結局いくらかかるのかが気になりますよね。<br>
+        そこでこの章では、料金に関わる通販ならではの注意点を2つ紹介します。
+    </p>
+    <ul>
+            <li>配送料と税を含めた価格で比較する</li>
+            <li>防犯登録の料金が別途で必要</li>
+        </ul>
+        <p>
+                どちらも<span class="marker">通販で自転車を探す前に知っておくと役立つ情報</span>です。<br>
+                ぜひ読みきってから検索することをおすすめします。
+            </p>
+            <p>
+                    また、通販に限らず安い自転車をお探しの人は、こちらの記事を参考にしてみてください。
+                </p>
+        <p class="anchor-link"><a href="https://cyclemarket.jp/static/article/1/43"><b>価格が安いおすすめ自転車15選と1万円前後の自転車はやめた方がいい理由&gt;&gt;</b></a></p>
+<h3 id="1-1">ポイント1.配送料と税を含めた価格で比較する</h3>
+<img alt="インターネットで検索する女性" class="cy-img-lazyload" data-original="https://d3nv4o49jjct9u.cloudfront.net/uploads/cms/images/77_05.png">
+<p>
+        通販で安い自転車を買うなら、配送料を含めた価格で比較、判断しましょう。<br>
+        通販サイトによって、配送料の設定額が大きく異なるからです。<br>
+        特に<span class="attention-negative">関東から遠い地域ほど、配送料は数千円単位で高く</span>なります。<br>
+        安いと思って購入手続きを進めていくと総額がやたらと膨れ上がっている…なんてことも。<br>
+        全体的に予算に合う価格帯の自転車があると思ったら、<span class="marker">まずサイトの紹介ページで配送料を確認する</span>ことをおすすめします。
+    </p>
+<h3 id="1-2">ポイント2.防犯登録の料金が別途で必要</h3>
+<img alt="自転車のコンポーネント" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/static/article/curation/82_02.png">
+<p>
+        通販サイトで販売されている自転車は、基本的に防犯登録はされていません。<br>
+        そのため、自転車が届いたら自分で自転車屋やホームセンターに持っていき、登録してもらう必要があります。<br>
+        自転車の防犯登録は1994年に法律で義務化されたため、<span class="marker">購入後に必ず登録料が別途600円ほどかかる</span>と思っておいていいでしょう。
+    </p>
+    <p>
+    防犯登録に必要なものや登録できる場所については、こちらの記事を参考にしてみてください。<br>
+    <a href="https://www.police-ch.jp/bouhan_touroku.html" target="_blank" rel="noopener">バイクや自転車の防犯登録は義務？警察で防犯登録できる？</a>
+</p>
+    <p>
+            ちなみに、当自転車通販サイトcyma-サイマ-では、お届け先の地域で防犯登録を済ませてからお送りしています。<br>
+            興味のある人は、こちらのリンクをご覧ください。<br>
+    <a href="https://cyclemarket.jp/guide/anticrime" target="_blank" rel="noopener">防犯登録はお済みですか？cyma-サイマ-なら面倒な手続きが一切不要！</a>
+</p>
+    <div class="attention-area-positive">
+            <dl>
+                <dt>
+                        通販で自転車を買うとき注意したいポイントまとめ
+                </dt>
+                <dd>
+                    <ul>
+                        <li>配送料はサイトによって異なるため、まずお住まいの地域の配送料をサイトの紹介ページで確認する</li>
+                        <li>基本的に、購入後に防犯登録料として別途600円かかる</li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+<h2 id="2">1万円以下の激安自転車はおすすめできない2つの理由</h2>
+<img alt="悩む女性" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/static/article/curation/60-61_01.png">
+<p>
+    通販で売られている1万円をきる激安自転車は、<span class="marker">自転車整備をしたことない人や、できるだけ長い期間使おうという人にはおすすめできません。</span><br>
+    １万円以下の自転車には、次の特徴があるからです。
+    </p>
+    <ul>
+        <li>完成された状態で届かない</li>
+        <li>壊れても修理してもらえない可能性がある</li>
+    </ul>
+    <p>
+    買ってから後悔することのないよう、しっかり目を通しておいてください。
+    </p>
+<h3 id="2-1">理由1.完成された状態で届かない</h3>
+<img alt="工具" class="cy-img-lazyload" data-original="https://d3nv4o49jjct9u.cloudfront.net/uploads/cms/images/44_02.png">
+<p>
+    通販で販売されている１万円以下の自転車のページをよく見てみると、その多くに『○○％完成した状態でお届け』と書いてあります。<br>
+    ハンドルやサドルを自分で取り付け、調節する必要があるということです。<br>
+    取り付けにはそれ専用の工具が必要になり、<span class="marker">一般的な家庭にある工具(六角棒レンチや家庭用スパナ)で代用すると怪我につながる整備不良の状態</span>になってしまいます。<br>
+    そのため、自転車の組立てをしたことがない人にはおすすめできません。
+    </p>
+    <p>
+    また、<span class="attention-negative">自分で組立てた自転車では自転車保険に加入できません。</span><br>
+    東京都では、2020年4月から<a href="https://www.sankei.com/column/news/191008/clm1910080002-n1.html" target="_blank" rel="noopener"></a>自転車保険への加入を義務化するよう条例が改正されました。<br>
+    大阪や神奈川などすでに義務化された地域もあるため、購入を検討する前に必ずお住いの地域の条例を確認しましょう。
+    </p>
+<h3 id="2-2">理由2.壊れても修理してもらえない可能性がある</h3>
+<img alt="自転車が壊れて悩む男性" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/static/article/curation/43_02.png">
+<p>
+        １万円以下の激安自転車は、パンク一つでも修理してもらえない可能性があります。<br>
+        自転車の知識極端に安い自転車は修理してもまたすぐに壊れてしまうと分かっているからです。<br>
+        すぐに壊れてしまったら「自転車屋の対処が悪かった」と言われる可能性もあるため、<span class="marker">極端に安い自転車の修理を断る</span>自転車屋もあります。
+    </p>
+    <p>
+    また、修理してもらえたとしても修理費がかさんでしまうこともあります。<br>
+    極端に安い自転車は修理する前提で作られていないため、小さな修理でも大掛かりな作業になりやすいからです。
+    </p>
+    <p>
+    確かに１万円以下で買える自転車は、価格だけで考えたら魅力的です。<br>
+    しかし、安全面やで長期的に使うコストパフォーマンスを考えると、おすすめはできません。
+    </p>
+    <div class="attention-area-positive">
+            <dl>
+                <dt>
+                        激安自転車をおすすめしない理由まとめ
+                </dt>
+                <dd>
+                    <ul>
+                        <li>完成した状態で届かないため、専用の工具がないと怪我につながる整備不良の状態になってしまう</li>
+                        <li>自分で組立てた自転車は自転車保険に加入できない</li>
+                        <li>壊れやすく、壊れても修理してもらえないことがある</li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    <p>
+    次章では、価格だけでなく、通販で買える安全でコスパのいい自転車を紹介していきます。
+    </p>
+<h2 id="3">【予算2万円以下】価格重視の人におすすめ！通販で買える安い自転車3選</h2>
+<p>
+    ここからは、通販で買える２万円以下、３万円以下の安い自転車を紹介していきます。<br>
+    この記事で紹介する自転車はすべて、次の条件を満たしています。
+</p>
+    <ul>
+        <li>プロの整備士が組立て</li>
+        <li>自宅に完成した状態で届く</li>
+        <li>お届け先の地域で防犯登録を済ませてある(別途600円が必要)</li>
+    </ul>
+<p>
+    組立配送料は地域ごとに異なるため、こちらを参考にしてください。
+</p>
+<p class="anchor-link"><a href="https://cyclemarket.jp/guide/payment"><b>自転車通販サイトcyma-サイマ-の組立配送料について&gt;&gt;</b></a></p>
+<p>
+    値段とデザイン、機能とのバランスを見ながら、ぜひ納得のいく安い自転車を探してみてください。
+</p>
+<h3 class="post-title__border-left">サントス</h3>
+	<a href="https://cyclemarket.jp/product/detail/977" rel="noopener" target="_blank"><img alt="サントス商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/T/TB6TE/TB6TE_m_01.jpg"></a>
+	<table class="geometry-table">
+		<thead>
+			<tr>
+				<th>項目</th>
+				<th>内容</th>
+			</tr>
+		</thead>
+		<tbody>
+                <tr>
+                        <th>価格</th>
+                        <td>¥14,980(税別)</td>
+                    </tr>
+			<tr>
+				<th>カラー展開</th>
+				<td>3色</td>
+			</tr>
+			<tr>
+				<th>サイズ展開</th>
+				<td>26インチ</td>
+			</tr>
+			<tr>
+				<th>適応身長</th>
+				<td>145㎝～</td>
+			</tr>
+			<tr>
+				<th>車体重量</th>
+				<td>18.1kg</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><b>この自転車を一言で表すと？</b></p>
+
+	<p>とにかくコストを抑えたい人へ！必要十分な機能がそろった実用的なシティサイクル</p>
+        <p class="page-link"><a href="https://cyclemarket.jp/product/detail/977"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+    <hr>
+    <h3 class="post-title__border-left">リトレッチ206</h3>
+	<a href="https://cyclemarket.jp/product/detail/980" rel="noopener" target="_blank"><img alt="リトレッチ206商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/M/MK-19-001/MK-19-001_m_01.jpg"></a>
+	<table class="geometry-table">
+		<thead>
+                <tr>
+                        <th>項目</th>
+                        <th>内容</th>
+                    </tr>
+		</thead>
+		<tbody>
+                <tr>
+                        <th>価格</th>
+                        <td>¥16,980(税別)</td>
+                    </tr>
+			<tr>
+				<th>カラー展開</th>
+				<td>2色</td>
+			</tr>
+			<tr>
+				<th>サイズ展開</th>
+				<td>20インチ</td>
+			</tr>
+			<tr>
+				<th>適応身長</th>
+				<td>148㎝～</td>
+			</tr>
+			<tr>
+				<th>車体重量</th>
+				<td>16.0kg</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><b>この自転車を一言で表すと？</b></p>
+
+	<p>必要な機能を備えたクラシックなデザインのミニベロ</p>
+
+	<p><b>この自転車の口コミ</b></p>
+        <p class="page-link"><a href="https://cyclemarket.jp/product/detail/980"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+    <hr>
+<h3 class="post-title__border-left">SIGNE(シグネ)</h3>
+	<a href="https://cyclemarket.jp/product/detail/386" rel="noopener" target="_blank"><img alt="SIGNEシグネ商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/ATM013/ATM013_m_05.jpg"></a>
+    <table class="geometry-table">
+        <thead>
+            <tr>
+                <th>項目</th>
+                <th>内容</th>
+            </tr>
+		</thead>
+		<tbody>
+                <tr>
+                        <th>価格</th>
+                        <td>¥17,980(税別)</td>
+                    </tr>
+			<tr>
+				<th>カラー展開</th>
+				<td>2色</td>
+			</tr>
+			<tr>
+				<th>サイズ展開</th>
+				<td>27インチ</td>
+			</tr>
+			<tr>
+				<th>適応身長</th>
+				<td>150㎝～</td>
+			</tr>
+			<tr>
+				<th>車体重量</th>
+				<td>16.2kg</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><b>この自転車を一言で表すと？</b></p>
+
+	<p>シンプルかつ軽量で扱いやすいシティサイクル！</p>
+
+	<p><b>この自転車の口コミ</b></p>
+
+	<blockquote class="quotes__icon">
+		<p>今まで20インチの折りたたみ自転車に乗っていましたが、やはり27インチだとひとこぎがスムーズだし軽い。変速も無くて良かったのでこの自転車はシンプルでカッコいいです！</p>
+	</blockquote>
+	<blockquote class="quotes__icon">
+            <p>近所の大型自転車屋さんを数件まわったのですが、 納得できる自転車にめぐり合わず、 こちらの自転車がどれも魅力的で、迷いました。(一部抜粋) 自転車がとても軽く、走るのがこんなに楽しく感じるとは！ ついつい遠出して、今までの行動範囲よりもずいぶん広がりました！</p>
+        </blockquote>
+        <p class="page-link"><a href="https://cyclemarket.jp/product/detail/386"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+    <hr>
+    <h3>あなたにおすすめの一台はこれ！2万円以下の自転車を比較</h3>
+    <p>
+        先ほど紹介した３車種のスペックを表にまとめて比較しました。
+        それぞれの車種の特徴からおすすめの選び方も紹介しています。
+        どれを選んだら良いかわからないという人は、ぜひ参考にしてみてください！
+    </p>
+    <p><b>こんなあなたにおすすめ！</b></p>
+    <ul>
+    <li>とにかくお値打ちに買いたい人→<b>サントス</b>
+</li>
+    <li>取り回しのいい自転車を探している人→<b>リトレッチ206</b>
+</li>
+    <li>軽い走り心地を低価格で求めている人→<b>SIGNE(シグネ)</b>
+</li>
+    </ul>
+    <div class="scroll-wrap">
+        <table class="geometry-table" style="width: 800px">
+            <thead>
+            <tr>
+                <th>車種名</th>
+                <th>サントス</th>
+                <th>リトレッチ206</th>
+                <th>シグネ</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th width="10%">見た目</th>
+                <td width="30%"><a href="https://cyclemarket.jp/product/detail/977" target="_blank" rel="noopener"><img alt="サントス商品画像" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/T/TB6TE/TB6TE_m_01.jpg"></a></td>
+                <td width="30%"><a href="https://cyclemarket.jp/product/detail/980" target="_blank" rel="noopener"><img alt="リトレッチ206商品画像" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/M/MK-19-001/MK-19-001_m_01.jpg"></a></td>
+                <td width="30%"><a href="https://cyclemarket.jp/product/detail/386" target="_blank" rel="noopener"><img alt="シグネ商品画像" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/ATM013/ATM013_m_05.jpg"></a></td>
+            </tr>
+                <tr>
+                        <th>価格</th>
+                        <td>¥14,980(税別)</td>
+                        <td>¥16,980(税別)</td>
+                        <td>¥17,980(税別)</td>
+                    </tr>
+                    <tr>
+                            <th>サイズ</th>
+                            <td>26インチ</td>
+                            <td>20インチ</td>
+                            <td>27インチ</td>
+                        </tr>
+                        <tr>
+                                <th>適応身長</th>
+                                <td>145cm～</td>
+                                <td>148㎝～</td>
+                                <td>150㎝～</td>
+                            </tr>
+                    <tr>
+                            <th>変速機</th>
+                            <td>なし</td>
+                            <td>外装6段変速</td>
+                            <td>なし</td>
+                        </tr>
+                    <tr>
+                            <th>車体重量</th>
+                            <td>18.1kg</td>
+                            <td>16.0kg</td>
+                            <td>16.2kg</td>
+                        </tr>
+                    <th>オプション</th>
+                    <td>
+                        <ul>
+                            <li>カゴ</li>
+                            <li>ライト</li>
+                            <li>サークル錠</li>
+                            <li>ベル</li>
+                            <li>泥除け</li>
+                            <li>チェーンカバー</li>
+                            <li>ドレスガード</li>
+                            <li>反射板</li>
+                            <li>両足スタンド</li>
+                            <li>荷台</li>
+                        </ul>
+                    </td>
+                    <td>
+                            <ul>
+                                    <li>カゴ</li>
+                                    <li>LEDライト</li>
+                                    <li>サークル錠</li>
+                                    <li>ベル</li>
+                                    <li>泥除け</li>
+                                    <li>チェーンカバー</li>
+                                    <li>反射板</li>
+                                    <li>片足スタンド</li>
+                                </ul>
+                    </td>
+                    <td>
+                            <ul>
+                                    <li>カゴ</li>
+                                    <li>LEDライト</li>
+                                    <li>サークル錠</li>
+                                    <li>ベル</li>
+                                    <li>泥除け</li>
+                                    <li>チェーンカバー</li>
+                                    <li>反射板</li>
+                                    <li>片足スタンド</li>
+                                </ul>
+                        </td>
+                    
+            </tbody>
+        </table>
+    </div>
+<h2 id="4">【予算3万円以下】通販で買えるおしゃれでコスパのいい自転車</h2>
+<h3 class="post-title__border-left">CURIOUS(キュリオス)</h3>
+<a href="https://cyclemarket.jp/product/detail/109" rel="noopener" target="_blank"><img alt="メイファ商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/L/LRV-266ALSF/LRV-266ALSF_m_19.jpg"></a>
+<table class="geometry-table">
+    <thead>
+            <tr>
+                    <th>項目</th>
+                    <th>内容</th>
+                </tr>
+    </thead>
+    <tbody>
+            <tr>
+                    <th>価格</th>
+                    <td>¥25,800(税別)</td>
+                </tr>
+        <tr>
+            <th>カラー展開</th>
+            <td>5色</td>
+        </tr>
+        <tr>
+            <th>サイズ展開</th>
+            <td>26インチ</td>
+        </tr>
+        <tr>
+            <th>適応身長</th>
+            <td>141㎝～</td>
+        </tr>
+        <tr>
+            <th>車体重量</th>
+            <td>20.3kg</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><b>この自転車を一言で表すと？</b></p>
+
+<p>おしゃれなはしご型フレームとメタリック調のカラーバリエーションが印象的なシティサイクル！</p>
+
+<p><b>この自転車の口コミ</b></p>
+
+<blockquote class="quotes__icon">
+    <p> 赤とオレンジの間のような良い色です。漕ぎ出しが軽く、乗り降りもしやすい形状です。これを買う前はシティバイクに乗っていたので、重量は重く感じてはいますが駐輪場の2段目上げることにも慣れてきました 。 かごも大きいので荷物がたくさん入ります。(一部抜粋)</p>
+</blockquote>
+<blockquote class="quotes__icon">
+        <p>整備も保険登録も済んで、届いたら直ぐに乗れて本当に楽チンな買い物でした。色、乗り心地ともに期待以上の自転車で満足です。</p>
+    </blockquote>
+<p class="page-link"><a href="https://cyclemarket.jp/product/detail/109"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+<hr>
+    <!--============================================================================================================-->
+<h3 class="post-title__border-left">Punk Rock(パンクロック)</h3>
+	<a href="https://cyclemarket.jp/product/detail/385" rel="noopener" target="_blank"><img alt="Punk Rock(パンクロック)商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/ATM012/ATM012_m_04.jpg"></a>
+	<table class="geometry-table">
+		<thead>
+                <tr>
+                        <th>項目</th>
+                        <th>内容</th>
+                    </tr>
+		</thead>
+		<tbody>
+                <tr>
+                        <th>価格</th>
+                        <td>¥24,480~(税別)</td>
+                    </tr>
+			<tr>
+				<th>カラー展開</th>
+				<td>2色</td>
+			</tr>
+			<tr>
+				<th>サイズ展開</th>
+				<td>27インチ</td>
+			</tr>
+			<tr>
+				<th>適応身長</th>
+				<td>152㎝～</td>
+			</tr>
+			<tr>
+				<th>車体重量</th>
+				<td>20.5kg</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><b>この自転車を一言で表すと？</b></p>
+
+	<p>パンクに強いタイヤを装備した、誰もが乗りやすいシンプルなシティサイクル！</p>
+
+	<p><b>この自転車の口コミ</b></p>
+
+	<blockquote class="quotes__icon">
+		<p>変則ギアも使いやすいし耐パンクタイヤと聞くと重いのでは？と思いこんでましたが普通の自転車と変わりない、扱いやすい良い自転車です。カゴも思ってたより大きくてA4縦トートバッグが難なく入ります。(一部抜粋)</p>
+    </blockquote>
+    <blockquote class="quotes__icon">
+            <p>1年乗りましたが故障もなく乗りやすいです。</p>
+        </blockquote>
+    <p class="page-link"><a href="https://cyclemarket.jp/product/detail/385"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+    <hr>
+        <!--============================================================================================================-->
+    <h3 class="post-title__border-left">Celesteno(セレスティーノ)</h3>
+	<a href="https://cyclemarket.jp/product/detail/799" rel="noopener" target="_blank"><img alt="Celesteno(セレスティーノ)商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/AM-019-1/AM-019-1_m_04.jpg"></a>
+	<table class="geometry-table">
+		<thead>
+                <tr>
+                        <th>項目</th>
+                        <th>内容</th>
+                    </tr>
+		</thead>
+		<tbody>
+                <tr>
+                        <th>価格</th>
+                        <td>¥24,480~(税別)</td>
+                    </tr>
+			<tr>
+				<th>カラー展開</th>
+				<td>2色</td>
+			</tr>
+			<tr>
+				<th>サイズ展開</th>
+				<td>27インチ</td>
+			</tr>
+			<tr>
+				<th>適応身長</th>
+				<td>150㎝～</td>
+			</tr>
+			<tr>
+				<th>車体重量</th>
+				<td>16.2kg</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><b>この自転車を一言で表すと？</b></p>
+
+	<p>ストレートなフレームと落ち着いた色味が人気のシティサイクル！</p>
+
+	<p><b>この自転車の口コミ</b></p>
+
+	<blockquote class="quotes__icon">
+		<p>ダークブラウンを購入しました。落ち着いていてとてもオシャレで良かったです。軽いし切り替えもスムーズで、ブレーキもちゃんとききます。発送も早く梱包もきちんとされていて良かったです。友達にオシャレと好評です。
+		</p>
+    </blockquote>
+    <blockquote class="quotes__icon">
+            <p>黒地をよーく見ると、青いキラキラがあるなぁという程度。 よーく見なければ黒です！ 乗り心地は普通です。 ライト自動点灯初めて乗りましたが楽ですね。 ギアは1番重いものでもそこまで重くないです。(一部抜粋)
+            </p>
+        </blockquote>
+    <p class="page-link"><a href="https://cyclemarket.jp/product/detail/799"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+    <hr>
+        <!--============================================================================================================-->
+    <h3 class="post-title__border-left">Dia Resto(ディアレスト)</h3>
+	<a href="https://cyclemarket.jp/product/detail/721" rel="noopener" target="_blank"><img alt="Dia Resto(ディアレスト)商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/AM-033/AM-033_m_13.jpg"></a>
+	<table class="geometry-table">
+		<thead>
+                <tr>
+                        <th>項目</th>
+                        <th>内容</th>
+                    </tr>
+		</thead>
+		<tbody>
+                <tr>
+                        <th>価格</th>
+                        <td>¥24,980~(税別)</td>
+                    </tr>
+			<tr>
+				<th>カラー展開</th>
+				<td>2色</td>
+			</tr>
+			<tr>
+				<th>サイズ展開</th>
+				<td>26インチ</td>
+			</tr>
+			<tr>
+				<th>適応身長</th>
+				<td>143㎝～</td>
+			</tr>
+			<tr>
+				<th>車体重量</th>
+				<td>19.8kg</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><b>この自転車を一言で表すと？</b></p>
+
+	<p>パーツに配されたブラウンがワンランク上のおしゃれさを演出してくれるシティサイクル</p>
+
+	<p><b>この自転車の口コミ</b></p>
+
+	<blockquote class="quotes__icon">
+		<p>カゴが大きめで、ギアが付いて、オートライト、買い出しにとても便利な自転車です。細部まできれいに作られていて、重量感がありしっかりとしています。 少しお金を出してオシャレなデザインのものを選んだのも良かったです。(一部抜粋)</p>
+    </blockquote>
+    <blockquote class="quotes__icon">
+            <p>普通の安いシティサイクル変速なしからの買い替えです。 作りはしっかりしているし、見た目オシャレだし、オートライトで重くないし、変速できるし、気に入ってます。 (一部抜粋)</p>
+        </blockquote>
+    <p class="page-link"><a href="https://cyclemarket.jp/product/detail/721"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+    <hr>
+    <!--============================================================================================================-->
+    <h3 class="post-title__border-left">グランディーノ</h3>
+	<a href="https://cyclemarket.jp/product/detail/389" rel="noopener" target="_blank"><img alt="グランディーノ商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/ATM018/ATM018_m_05.jpg"></a>
+	<table class="geometry-table">
+		<thead>
+                <tr>
+                        <th>項目</th>
+                        <th>内容</th>
+                    </tr>
+		</thead>
+		<tbody>
+                <tr>
+                        <th>価格</th>
+                        <td>¥26,980~(税別)</td>
+                    </tr>
+			<tr>
+				<th>カラー展開</th>
+				<td>2色</td>
+			</tr>
+			<tr>
+				<th>サイズ展開</th>
+				<td>26インチ</td>
+			</tr>
+			<tr>
+				<th>適応身長</th>
+				<td>144㎝～</td>
+			</tr>
+			<tr>
+				<th>車体重量</th>
+				<td>20.5kg</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><b>この自転車を一言で表すと？</b></p>
+
+	<p>女性の「欲しい」が詰まった大人可愛いシティサイクル！</p>
+
+	<p><b>この自転車の口コミ</b></p>
+
+	<blockquote class="quotes__icon">
+		<p>ネット購入は初めてでした。仕事で自転車での配達をしており、楽で乗りやすくカゴが大きい自転車を探しておりました。お買得に購入出来、色も素敵でオススメです。(一部抜粋)</p>
+    </blockquote>
+    <blockquote class="quotes__icon">
+            <p>前かごも大きく網目が細かいので、小さいものが落ちる心配もありません。身長は153センチですが、26インチでぴったりでした。(一部抜粋)</p>
+        </blockquote>
+    <p class="page-link"><a href="https://cyclemarket.jp/product/detail/389"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+    <hr>
+        <!--============================================================================================================-->
+    <h3 class="post-title__border-left">Arvita(アルヴィータ)</h3>
+	<a href="https://cyclemarket.jp/product/detail/719" rel="noopener" target="_blank"><img alt="Arvita(アルヴィータ)商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/AM-032/AM-032_m_03.jpg"></a>
+	<table class="geometry-table">
+		<thead>
+                <tr>
+                        <th>項目</th>
+                        <th>内容</th>
+                    </tr>
+		</thead>
+		<tbody>
+                <tr>
+                        <th>価格</th>
+                        <td>¥25,800(税別)</td>
+                    </tr>
+			<tr>
+				<th>カラー展開</th>
+				<td>2色</td>
+			</tr>
+			<tr>
+				<th>サイズ展開</th>
+				<td>27インチ</td>
+			</tr>
+			<tr>
+				<th>適応身長</th>
+				<td>154㎝～</td>
+			</tr>
+			<tr>
+				<th>車体重量</th>
+				<td>20.2kg</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><b>この自転車を一言で表すと？</b></p>
+
+	<p>男女問わず選ばれるフォルム！錆びに強いパーツを備えたシティサイクル</p>
+
+	<p><b>この自転車の口コミ</b></p>
+
+	<blockquote class="quotes__icon">
+		<p> 高級感があり、かっこいいです！！ 組み立てた状態で届くので、安心です。 良い買い物ができました。(一部抜粋)</p>
+    </blockquote>
+    <blockquote class="quotes__icon">
+            <p>とても良いです。通勤で毎日使用してますが、以前、使用していた近くの大型ホームセンターのママチャリを使用していましたがすぐにガタがきて車体全体に軋みが来て重い感じしました。今は毎日が快適です。(一部抜粋)</p>
+        </blockquote>
+    <p class="page-link"><a href="https://cyclemarket.jp/product/detail/719"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+    <hr>
+    <!--============================================================================================================-->
+    <h4>あなたにおすすめの一台はこれ！おしゃれな安い自転車を比較</h4>
+    <p>
+        先ほど紹介した5車種のスペックを表にまとめて比較しました。
+        それぞれの車種の特徴からおすすめの選び方も紹介しています。
+        デザインが最後の決め手になる人が多いですが、どれを選んだら良いかわからないという人はぜひ参考にしてみてください！
+    </p>
+    <p><b>こんなあなたにおすすめ！</b></p>
+    <ul>
+    <li>とにかく安くて便利な自転車を探している人<b>CURIOUS(キュリオス)</b>
+</li>
+    <li>パンク修理の手間をかけたくない人→<b>Pank Rock(パンクロック)</b>
+</li>
+    <li>安くて軽い自転車を探している人→<b>Celesteno(セレスティーノ)</b>
+</li>
+    <li>低身長でも乗りやすい自転車を探している人→<b>Dia Resto(ディアレスト)</b>
+</li>
+    <li>おしゃれで便利な自転車を探している人→<b>グランディーノ</b>
+</li>
+    <li>かっこいいフォルムの安い自転車を探している人→<b>Arvita(アルヴィータ)</b>
+</li>
+    </ul>
+    <div class="scroll-wrap">
+            <table class="geometry-table" style="width: 800px">
+                <thead>
+                <tr>
+                    <th>車種名</th>
+                    <th>キュリオス</th>
+                    <th>パンクロック</th>
+                    <th>セレスティーノ</th>
+                    <th>ディアレスト</th>
+                    <th>グランディーノ</th>
+                    <th>アルヴィータ</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th width="10%">見た目</th>
+                    <td width="15%"><a href="https://cyclemarket.jp/product/detail/109" target="_blank" rel="noopener"><img alt="キュリオス" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/L/LRV-266ALSF/LRV-266ALSF_m_19.jpg"></a></td>
+                    <td width="15%"><a href="https://cyclemarket.jp/product/detail/385" target="_blank" rel="noopener"><img alt="パンクロック" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/ATM012/ATM012_m_04.jpg"></a></td>
+                    <td width="15%"><a href="https://cyclemarket.jp/product/detail/799" target="_blank" rel="noopener"><img alt="セレスティーノ" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/AM-019-1/AM-019-1_m_04.jpg"></a></td>
+                    <td width="15%"><a href="https://cyclemarket.jp/product/detail/730" target="_blank" rel="noopener"><img alt="ディアレスト" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/AM-033/AM-033_m_13.jpg"></a></td>
+                    <td width="15%"><a href="https://cyclemarket.jp/product/detail/798" target="_blank" rel="noopener"><img alt="グランディーノ" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/ATM018/ATM018_m_05.jpg"></a></td>
+                    <td width="15%"><a href="https://cyclemarket.jp/product/detail/719" target="_blank" rel="noopener"><img alt="アルヴィータ" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/AM-032/AM-032_m_03.jpg"></a></td>
+                </tr>
+                <tr>
+                        <th>価格</th>
+                        <td>¥22,980(税別)</td>
+                        <td>¥23,980(税別)</td>
+                        <td>¥24,480(税別)</td>
+                        <td>¥24,980(税別)</td>
+                        <td>¥26,980(税別)</td>
+                        <td>¥25,800(税別)</td>
+                    </tr>
+                    <tr>
+							<th>サイズ</th>
+                            <td>26インチ</td>
+                            <td>27インチ</td>
+                            <td>27インチ</td>
+                            <td>26インチ</td>
+                            <td>26インチ</td>
+                            <td>27インチ</td>
+                        </tr>
+                        <tr>
+                                <th>適応身長</th>
+                                <td>145cm～</td>
+                                <td>152cm～</td>
+                                <td>148cm～</td>
+                                <td>143cm～</td>
+                                <td>144cm～</td>
+                                <td>154㎝～</td>
+                            </tr>
+                        <tr>
+                    </tr>
+<tr>
+                            <th>変速機</th>
+                            <td>外装6段変速</td>
+                            <td>外装6段変速</td>
+                            <td>外装6段変速</td>
+                            <td>外装6段変速</td>
+                            <td>外装6段変速</td>
+                            <td>外装6段変速</td>
+                        </tr>
+                    <tr>
+                            <th>車体重量</th>
+                            <td>19.1kg</td>
+                            <td>20.5kg</td>
+                            <td>18.7kg</td>
+                            <td>19.8kg</td>
+                            <td>20.5kg</td>
+                            <td>20.2kg</td>
+                        </tr>
+                        <tr>
+                        <th>オプション</th>
+                        <td>
+                            <ul>
+                                <li>カゴ</li>
+                                <li>LEDライト</li>
+                                <li>サークル錠</li>
+                                <li>ベル</li>
+                                <li>泥除け</li>
+                                <li>チェーンカバー</li>
+                                <li>ドレスガード</li>
+                                <li>反射板</li>
+                                <li>両足スタンド</li>
+                                <li>荷台</li>
+                            </ul>
+                        </td>
+                        <td>
+                                <ul>
+                                        <li>カゴ</li>
+                                        <li>LEDオートライト</li>
+                                        <li>サークル錠</li>
+                                        <li>ベル</li>
+                                        <li>泥除け</li>
+                                        <li>チェーンカバー</li>
+                                        <li>ドレスガード</li>
+                                        <li>反射板</li>
+                                        <li>両足スタンド</li>
+                                        <li>荷台</li>
+                                    </ul>
+						</td>
+                        <td>
+                                <ul>
+                                        <li>カゴ</li>
+                                        <li>LEDオートライト</li>
+                                        <li>サークル錠</li>
+                                        <li>ベル</li>
+                                        <li>泥除け</li>
+                                        <li>反射板</li>
+                                        <li>片足スタンド</li>
+                                        <li>荷台</li>
+                                    </ul>
+                        </td>
+                        <td>
+                                <ul>
+                                        <li>籐風カゴ</li>
+                                        <li>LEDオートライト</li>
+                                        <li>サークル錠</li>
+                                        <li>ベル</li>
+                                        <li>泥除け</li>
+                                        <li>チェーンカバー</li>
+                                        <li>ドレスガード</li>
+                                        <li>反射板</li>
+                                        <li>両足スタンド</li>
+                                        <li>荷台</li>
+                                    </ul>
+                        </td>
+                        <td>
+                                <ul>
+                                        <li>籐風カゴ</li>
+                                        <li>LEDオートライト</li>
+                                        <li>サークル錠</li>
+                                        <li>ベル</li>
+                                        <li>泥除け</li>
+                                        <li>チェーンカバー</li>
+                                        <li>ドレスガード</li>
+                                        <li>反射板</li>
+                                        <li>両足スタンド</li>
+                                        <li>荷台</li>
+                                    </ul>
+                        </td>
+                        <td>
+                                <ul>
+                                        <li>カゴ</li>
+                                        <li>LEDオートライト</li>
+                                        <li>サークル錠</li>
+                                        <li>ベル</li>
+                                        <li>泥除け</li>
+                                        <li>チェーンカバー</li>
+                                        <li>耐パンクタイヤ</li>
+                                        <li>反射板</li>
+                                        <li>両足スタンド</li>
+                                        <li>荷台</li>
+                                    </ul>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2 id="5">【予算3万円以下】おしゃれで安いミニベロ3選</h2>
+    <h3 class="post-title__border-left">CURIOUS mini(キュリオス ミニ)</h3>
+	<a href="https://cyclemarket.jp/product/detail/840" rel="noopener" target="_blank"><img alt="CURIOUS mini(キュリオス ミニ)商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/AM-044-1/AM-044-1_m_05.jpg"> </a>
+
+	<table class="geometry-table">
+		<thead>
+                <tr>
+                        <th>項目</th>
+                        <th>内容</th>
+                    </tr>
+		</thead>
+		<tbody>
+                <tr>
+                        <th>価格</th>
+                        <td>¥23,800(税別)</td>
+                    </tr>
+			<tr>
+				<th>カラー展開</th>
+				<td>2色</td>
+			</tr>
+			<tr>
+				<th>サイズ展開</th>
+				<td>20インチ</td>
+			</tr>
+			<tr>
+				<th>適応身長</th>
+				<td>139cm～</td>
+			</tr>
+			<tr>
+				<th>車体重量</th>
+				<td>15.5kg</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><b>この自転車を一言で表すと？</b></p>
+
+	<p>シングルギアでチェーントラブルに強いシンプルなミニベロ</p>
+
+	<p><b>この自転車の口コミ</b></p>
+
+	<blockquote class="quotes__icon">
+		<p>
+                駐車スペースがあまりないので、ミニベロを探していました。デザインかわいい。交差点で止まったり、漕ぎだすのはママチャリより断然楽です。(一部抜粋)
+		</p>
+    </blockquote>
+    <blockquote class="quotes__icon">
+            <p>
+                    つや消し効果か自然な色でサドルやカゴの茶色ともとても合っていて可愛いです。 タイヤが小さめですが逆に安定感もあり、走り出しもスムーズですし緩めの坂道は通常の自転車より機動性が良いです。(一部抜粋)
+            </p>
+        </blockquote>
+    <p class="page-link"><a href="https://cyclemarket.jp/product/detail/840"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+    <hr>
+    <!--============================================================================================================-->
+    <h3 class="post-title__border-left">ComO'rade(コモラード)</h3>
+	<a href="https://cyclemarket.jp/product/detail/392" rel="noopener" target="_blank"><img alt="ComO'rade(コモラード)商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/ATM009/ATM009_m_07.jpg"> </a>
+
+	<table class="geometry-table">
+		<thead>
+                <tr>
+                        <th>項目</th>
+                        <th>内容</th>
+                    </tr>
+		</thead>
+		<tbody>
+                <tr>
+                        <th>価格</th>
+                        <td>¥23,980(税別)</td>
+                    </tr>
+			<tr>
+				<th>カラー展開</th>
+				<td>3色</td>
+			</tr>
+			<tr>
+				<th>サイズ展開</th>
+				<td>20インチ</td>
+			</tr>
+			<tr>
+				<th>適応身長</th>
+				<td>143cm～</td>
+			</tr>
+			<tr>
+				<th>車体重量</th>
+				<td>17.5kg</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><b>この自転車を一言で表すと？</b></p>
+
+	<p>コンパクトなボディに必要機能が全部つまった、ミニベロの決定版！</p>
+
+	<p><b>この自転車の口コミ</b></p>
+
+	<blockquote class="quotes__icon">
+		<p>
+                スタイリッシュなボディに惹かれて購入しました。 色で悩みましたが、白にして良かったです。 相当気に入っています。 組立品が届くので届いた日から乗れるのはとても良かったです。 乗り心地良いし、大きなカゴが付いているのも魅力の1つです。
+		</p>
+    </blockquote>
+    <blockquote class="quotes__icon">
+            <p>
+                    車輪が小さな自転車は初めてで最初は漕ぎ出しのスピードと回転の速さに戸惑いましたが、慣れてくると気にならなくなりました。 初日に20キロ走りましたが頑張って荷物を運んでくれた自転車に愛着がしっかり湧いて、名前をつけて可愛がっています。
+            </p>
+        </blockquote>
+    <p class="page-link"><a href="https://cyclemarket.jp/product/detail/392"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+
+	<hr>
+    <h3 class="post-title__border-left">mimosa(ミモザ)</h3>
+	<a href="https://cyclemarket.jp/product/detail/334" rel="noopener" target="_blank"><img alt="mimosa(ミモザ)商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/S/SK-MIMOSA/SK-MIMOSA_m_06.jpg"> </a>
+
+	<table class="geometry-table">
+		<thead>
+                <tr>
+                        <th>項目</th>
+                        <th>内容</th>
+                    </tr>
+		</thead>
+		<tbody>
+                <tr>
+                        <th>価格</th>
+                        <td>¥26,980(税別)</td>
+                    </tr>
+			<tr>
+				<th>カラー展開</th>
+				<td>4色</td>
+			</tr>
+			<tr>
+				<th>サイズ展開</th>
+				<td>20インチ</td>
+			</tr>
+			<tr>
+				<th>適応身長</th>
+				<td>150cm～</td>
+			</tr>
+			<tr>
+				<th>車体重量</th>
+				<td>14.5kg</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><b>この自転車を一言で表すと？</b></p>
+
+	<p>ファッション性抜群！生活に”色”をプラスしてくれる人気のミニベロ</p>
+
+	<p><b>この自転車の口コミ</b></p>
+
+	<blockquote class="quotes__icon">
+		<p>同じ価格帯の自転車もいくつかありましたが 泥除けとかごを合わせた値段だとmimosaのコスパはいいと思います。 あとはやっぱり好みですね。(一部抜粋)</p>
+    </blockquote>
+    <blockquote class="quotes__icon">
+            <p>まず、見た目がネットで見た通りで凄く可愛いです！また、こぎ出しも楽で速度も結構出ます。</p>
+        </blockquote>
+    <p class="page-link"><a href="https://cyclemarket.jp/product/detail/334"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+    <hr>
+    <h3>あなたにおすすめの一台はこれ！3万円以下の安いミニベロを比較</h3>
+    <p>
+        先ほど紹介した３車種のスペックを表にまとめて比較しました。
+        それぞれの車種の特徴からおすすめの選び方も紹介しています。
+        どれを選んだら良いかわからないという人は、ぜひ参考にしてみてください！
+    </p>
+<p><b>こんなあなたにおすすめ！</b></p>
+<ul>
+    <li>必要なオプションが一通り付いた軽いミニベロを探している人→<b>CURIOUS mini(キュリオス ミニ)</b>
+</li>
+    <li>便利なオプションや機能が付いたミニベロを探している人→<b>ComO'rade(コモラード)</b>
+</li>
+    <li>おしゃれで軽いミニベロを探している人→<b>mimosa(ミモザ)</b>
+</li>
+</ul>
+   <div class="scroll-wrap">
+            <table class="geometry-table" style="width: 800px">
+                <thead>
+                <tr>
+                    <th>車種名</th>
+                    <th>キュリオス ミニ</th>
+                    <th>コモラード</th>
+                    <th>ミモザ</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th width="10%">見た目</th>
+                    <td width="30%"><a href="https://cyclemarket.jp/product/detail/840" target="_blank" rel="noopener"><img alt="キュリオス ミニ" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/AM-044-1/AM-044-1_m_05.jpg"></a></td>
+                    <td width="30%"><a href="https://cyclemarket.jp/product/detail/392" target="_blank" rel="noopener"><img alt="コモラード" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/ATM009/ATM009_m_07.jpg"></a></td>
+                    <td width="30%"><a href="https://cyclemarket.jp/product/detail/334" target="_blank" rel="noopener"><img alt="ミモザ" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/S/SK-MIMOSA/SK-MIMOSA_m_06.jpg"></a></td>
+                </tr>
+				<tr>
+						<th>価格</th>
+						<td>¥23,800(税別)</td>
+                        <td>¥23,980(税別)</td>
+                        <td>¥25,980(税別)</td>
+                    </tr>
+                    <tr>
+							<th>サイズ</th>
+							<td>20インチ</td>
+                            <td>20インチ</td>
+                            <td>20インチ</td>
+                        </tr>
+                        <tr>
+                                <th>適応身長</th>
+                                <td>139cm～</td>
+                                <td>143cm～</td>
+                                <td>150cm～</td>
+                            </tr>
+                    <tr>
+                            <th>変速機</th>
+                            <td>なし</td>
+                            <td>外装6段変速</td>
+                            <td>外装6段変速</td>
+                        </tr>
+					<tr>
+							<th>車体重量</th>
+							<td>15.5kg</td>
+                            <td>17.5kg</td>
+                            <td>14.5kg</td>
+                        </tr>
+                        <tr>
+						<th>オプション</th>
+						<td>
+                                <ul>
+                                        <li>カゴ</li>
+                                        <li>LEDライト</li>
+                                        <li>サークル錠</li>
+                                        <li>ベル</li>
+                                        <li>泥除け</li>
+                                        <li>チェーンカバー</li>
+                                        <li>反射板</li>
+                                        <li>片足スタンド</li>
+                                    </ul>
+						</td>
+						<td>
+                                <ul>
+                                        <li>カゴ</li>
+                                        <li>LEDライト</li>
+                                        <li>サークル錠</li>
+                                        <li>ベル</li>
+                                        <li>泥除け</li>
+                                        <li>チェーンカバー</li>
+                                        <li>反射板</li>
+                                        <li>片足スタンド</li>
+                                        <li>荷台</li>
+                                    </ul>
+                        </td>
+                        <td>
+                                <ul>
+                                        <li>籐風カゴ</li>
+                                        <li>ベル</li>
+                                        <li>泥除け</li>
+                                        <li>反射板</li>
+                                        <li>片足スタンド</li>
+                                    </ul>
+                        </td>
+					</tr>
+			</tbody>
+		</table>
+    </div>
+    <h2 id="6">【予算3万円以下】スタイリッシュな安いシティクロス3選</h2>
+    <h4 class="post-title__border-left">Mixte City(ミキストシティ)</h4>
+	<a href="https://cyclemarket.jp/product/detail/722" rel="noopener" target="_blank"><img alt="Mixte City(ミキストシティ)商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/AM-034/AM-034_m_03.jpg"></a>
+	<table class="geometry-table">
+		<thead>
+                <tr>
+                        <th>項目</th>
+                        <th>内容</th>
+                    </tr>
+		</thead>
+		<tbody>
+                <tr>
+                        <th>価格</th>
+                        <td>¥24,980~(税別)</td>
+                    </tr>
+			<tr>
+				<th>カラー展開</th>
+				<td>2色</td>
+			</tr>
+			<tr>
+				<th>サイズ展開</th>
+				<td>26インチ</td>
+			</tr>
+			<tr>
+				<th>適応身長</th>
+				<td>149㎝～</td>
+			</tr>
+			<tr>
+				<th>車体重量</th>
+				<td>17.4kg</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><b>この自転車を一言で表すと？</b></p>
+
+	<p>おしゃれなミキストフレームを採用！パーツもこだわった上質なシティサイクル</p>
+
+	<p><b>この自転車の口コミ</b></p>
+
+	<blockquote class="quotes__icon">
+		<p>カゴが大きめで、ギアが付いて、オートライト、買い出しにとても便利な自転車です。細部まできれいに作られていて、重量感がありしっかりとしています。 少しお金を出してオシャレなデザインのものを選んだのも良かったです。(一部抜粋)</p>
+    </blockquote>
+    <blockquote class="quotes__icon">
+            <p>凄く乗り心地が良く、初乗りから違和感なく、自転車の形もお洒落で、気に入ってます。自転車歴は長く、何台も乗り替えてきましたが、今のところ、不満な点は見当たりません。 サドルの硬さも私には、丁度いい感じ。(一部抜粋)</p>
+        </blockquote>
+    <p class="page-link"><a href="https://cyclemarket.jp/product/detail/722"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+    <hr>
+    <!--============================================================================================================-->
+    <h4 class="post-title__border-left">ヴォラーレ</h4>
+<a href="https://cyclemarket.jp/product/detail/370" rel="noopener" target="_blank"><img alt="ヴォラーレ商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/S/SST-CR276V-HD/SST-CR276V-HD_m_04.jpg"></a>
+
+<table class="geometry-table">
+    <thead>
+        <tr>
+            <th>項目</th>
+            <th>内容</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>価格</th>
+            <td>¥25,980～(税別)</td>
+        </tr>
+        <tr>
+            <th>カラー展開</th>
+            <td>2色</td>
+        </tr>
+        <tr>
+            <th>適応身長</th>
+            <td>154cm～</td>
+        </tr>
+        <tr>
+            <th>車体重量</th>
+            <td>19.2kg</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><b>この自転車を一言で表すと？</b></p>
+
+<p>都会の街並みに溶け込む、スタイリッシュなシティクロス</p>
+
+<p><b>この自転車の口コミ</b></p>
+
+<blockquote class="quotes__icon">
+<p>何でも付いているので、気に入ってます。高級感に欠ける造りですが、値段からすればリーズナブル、ホームセンター等のものと比べても、いい買いものでした。自転車に特別なこだわりはないけど、ママチャリはちょっとという人には、おススメです。(一部抜粋)</p>
+</blockquote>
+
+<blockquote class="quotes__icon">
+<p> 通勤に使っています。 調子いいです。 サドル、ハンドル、ブレーキ等を自分に合わせました。 Vブレーキでオートライトでこの価格は希少と思います。</p>
+</blockquote>
+
+<p class="page-link"><a href="https://cyclemarket.jp/product/detail/370"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+
+<hr>
+<!--============================================================================================================-->
+<h4 class="post-title__border-left">CORTEZ(コルテス)</h4>
+<a href="https://cyclemarket.jp/product/detail/221" rel="noopener" target="_blank"><img alt="CORTEZ(コルテス)商品画像" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/7/700-6CRCT-AT/700-6CRCT-AT_m_09.jpg"></a>
+<table class="geometry-table">
+    <thead>
+            <tr>
+                    <th>項目</th>
+                    <th>内容</th>
+                </tr>
+    </thead>
+    <tbody>
+            <tr>
+                    <th>価格</th>
+                    <td>¥28,480(税別)</td>
+                </tr>
+        <tr>
+            <th>カラー展開</th>
+            <td>2色</td>
+        </tr>
+        <tr>
+            <th>サイズ展開</th>
+            <td>700cc</td>
+        </tr>
+        <tr>
+            <th>適応身長</th>
+            <td>155cm～</td>
+        </tr>
+        <tr>
+            <th>車体重量</th>
+            <td>16.8kg</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><b>この自転車を一言で表すと？</b></p>
+
+<p>クラシカルな色使いがカッコいい実用的なシティクロスバイク</p>
+
+<p><b>この自転車の口コミ</b></p>
+
+<blockquote class="quotes__icon">
+    <p>見た目より本体が軽く、スピードもけっこう出ますので走っていて爽快です、タイヤも太い方だと思いますので段差等も安心感があります。まだそれほど距離は走っていませんが長く乗っていきたいと思います。(一部抜粋)</p>
+</blockquote>
+<blockquote class="quotes__icon">
+        <p>乗り心地最高！デザインも最初持ち手と、サドルが茶色がどうかな？と思ったのですが、かっこいいです。車体も軽く、坂道もらくらくで、とても良かったです。</p>
+    </blockquote>
+<p class="page-link"><a href="https://cyclemarket.jp/product/detail/221"><span>この自転車をもっと見る&gt;&gt;</span></a></p>
+<hr>
+<!--============================================================================================================-->
+<h4>あなたにおすすめの一台はこれ！スタイリッシュなシティクロスを比較</h4>
+    <p>
+        先ほど紹介した３車種のスペックを表にまとめて比較しました。
+        それぞれの車種の特徴からおすすめの選び方も紹介しています。
+        どれを選んだら良いかわからないという人は、ぜひ参考にしてみてください！
+    </p>
+<p><b>こんなあなたにおすすめ！</b></p>
+<ul>
+    <li>スポーティさとおしゃれさとを求めている人→<b>Mixte City(ミキストシティ)</b>
+</li>
+    <li>ママチャリ通勤・通学から抜け出したい人→<b>ヴォラーレ</b>
+</li>
+    <li>クロスバイク並の軽い走りを求めている人→<b>CORTEZ(コルテス)</b>
+</li>
+</ul>
+   <div class="scroll-wrap">
+            <table class="geometry-table" style="width: 800px">
+                <thead>
+                <tr>
+                    <th>車種名</th>
+                    <th>ミキストシティ</th>
+                    <th>ヴォラーレ</th>
+                    <th>コルテス</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th width="10%">見た目</th>
+                    <td width="30%"><a href="https://cyclemarket.jp/product/detail/967" target="_blank" rel="noopener"><img alt="ミキストシティ" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/A/AM-034/AM-034_m_03.jpg"></a></td>
+                    <td width="30%"><a href="https://cyclemarket.jp/product/detail/370" target="_blank" rel="noopener"><img alt="ヴォラーレ" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/S/SST-CR276V-HD/SST-CR276V-HD_m_04.jpg"></a></td>
+                    <td width="30%"><a href="https://cyclemarket.jp/product/detail/719" target="_blank" rel="noopener"><img alt="コルテス" width="100%" class="cy-img-lazyload" data-original="https://res.cyclemarket.jp/images/products/7/700-6CRCT-AT/700-6CRCT-AT_m_09.jpg"></a></td>
+                </tr>
+				<tr>
+						<th>価格</th>
+						<td>¥24,980(税別)</td>
+                        <td>¥25,380(税別)</td>
+                        <td>¥28,480(税別)</td>
+                    </tr>
+                    <tr>
+							<th>サイズ</th>
+							<td>26インチ</td>
+                            <td>700CC</td>
+                            <td>700C</td>
+                        </tr>
+                        <tr>
+                                <th>適応身長</th>
+                                <td>149cm～</td>
+                                <td>154cm～</td>
+                                <td>155cm～</td>
+                            </tr>
+                    <tr>
+                            <th>変速機</th>
+                            <td>外装6段変速</td>
+                            <td>外装6段変速</td>
+                            <td>外装6段変速</td>
+                        </tr>
+					<tr>
+							<th>車体重量</th>
+							<td>17.4kg</td>
+                            <td>19.2kg</td>
+                            <td>16.8kg</td>
+                        </tr>
+                        <tr>
+						<th>オプション</th>
+						<td>
+                                <ul>
+                                        <li>籐風カゴ</li>
+                                        <li>LEDオートライト</li>
+                                        <li>サークル錠</li>
+                                        <li>ベル</li>
+                                        <li>泥除け</li>
+                                        <li>チェーンカバー</li>
+                                        <li>反射板</li>
+                                        <li>片足スタンド</li>
+                                    </ul>
+						</td>
+						<td>
+                                <ul>
+                                        <li>カゴ</li>
+                                        <li>LEDオートライト</li>
+                                        <li>サークル錠</li>
+                                        <li>ベル</li>
+                                        <li>泥除け</li>
+                                        <li>チェーンカバー</li>
+                                        <li>反射板</li>
+                                        <li>片足スタンド</li>
+                                    </ul>
+                        </td>
+                        <td>
+                                <ul>
+                                        <li>カゴ</li>
+                                        <li>LEDオートライト</li>
+                                        <li>サークル錠</li>
+                                        <li>ベル</li>
+                                        <li>泥除け</li>
+                                        <li>チェーンカバー</li>
+                                        <li>反射板</li>
+                                        <li>片足スタンド</li>
+                                    </ul>
+                        </td>
+					</tr>
+			</tbody>
+		</table>
+	</div>
+<h2 id="7">まとめ</h2>
+<p>
+        納得のいく安い自転車は見つかりましたか？<br>
+        この記事では、次のことについて紹介してきました。
+    </p>
+<dl class="article-summary">
+    <dt>記事のまとめ</dt>
+    <dd>
+        <ul>
+            <li>通販で自転車を買う時は配送料を含めた価格で比較する</li>
+            <li>通販で自転車を買うと防犯登録する必要があり、別途600円がかかる</li>
+            <li>1万円以下の激安自転車は壊れやすく怪我をしかねないためおすすめできない</li>
+        </ul>
+    </dd>
+</dl>
+<p>
+        安く買うことも大事ですが、ある程度使いやすく、怪我をしない最低限の品質であることも大事です。
+        また、自転車は修理しながら長く使えるものです。
+        あなたの生活をより快適にするために、価格と機能、デザイン面で納得のいく自転車をぜひ探してみてください。
+    </p>
+    <p class="page-link"><a href="https://cyclemarket.jp/product/category_1/"><span>自転車をもっと探す&gt;&gt;</span></a></p>
+<h2 id="8">通販で買える安い自転車のちょっと気になるQ&amp;Aを紹介</h2>
+<div class="faq-box cy-faq-box">
+        <dl>
+            <dt>
+                <span class="question">Q.</span>
+                通販で自転車を探すときに気をつけることは？
+                <span class="accordion-arrow"></span>
+            </dt>
+            <dd>
+                <span class="answer">A.</span>
+                通販で自転車を探す時は、配送料を含めた価格で比較しましょう。<br>
+                通販サイトや配送先によって金額が大きく異なるからです。
+            </dd>
+        </dl>
+        <dl>
+                <dt>
+                    <span class="question">Q.</span>
+                    通販サイトで販売されている１万円以下の自転車は買っても大丈夫？
+                    <span class="accordion-arrow"></span>
+                </dt>
+                <dd>
+                    <span class="answer">A.</span>
+                    通販サイトで販売されている１万円以下の自転車は、自分で組み立てる必要があるため自転車整備の知識がない人にはおすすめできません。<br>
+                    組立てに専用の工具が必要であり、事故の原因になりかねない整備不足になりやすいからです。
+                </dd>
+            </dl>
+        <dl>
+            <dt>
+                <span class="question">Q.</span>
+                通販で自転車を買うときの注意点は？
+                <span class="accordion-arrow"></span>
+            </dt>
+            <dd>
+                <span class="answer">A.</span>
+                        自転車を使うにあたって最低限あってほしいパーツが別売り、または取り付けられない商品もあるので注意してください。<br>
+                        通勤や買い物に自転車を使いたいと考えているなら、カゴ、ライト、カギ、スタンド、泥除け、ベルが取り付けられている自転車がおすすめです。
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <span class="question">Q.</span>
+                通販で買える自転車は防犯登録されているの？
+                <span class="accordion-arrow"></span>
+            </dt>
+            <dd>
+                <span class="answer">A.</span>
+                販売店によるが、登録が済んでいない場合が多いです。<br>
+                済んでいない場合、自分で近くの自転車店やホームセンターに行って登録する必要があります。<br>
+                販売店の紹介ページで防犯登録ができるか確認してください。<br>
+                なお、当自転車通販サイトcyma-サイマ-では、お届け先の住所で防犯登録を済ませてから自転車をお送りしています。
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+        "@type": "Question",
+        "name": "通販で自転車を探すときに気をつけることは？",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "通販で自転車を探す時は、配送料を含めた価格で比較しましょう。通販サイトや配送先によって金額が大きく異なるからです。"
+        }
+    },
+    {
+        "@type": "Question",
+        "name": "通販サイトで販売されている１万円以下の自転車は買っても大丈夫？",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "通販サイトで販売されている１万円以下の自転車は、自分で組み立てる必要があるため自転車整備の知識がない人にはおすすめできません。組立てに専用の工具が必要であり、事故の原因になりかねない整備不足になりやすいからです。"
+        }
+    },
+    {
+        "@type": "Question",
+        "name": "通販で自転車を買うときの注意点は？",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "自転車を使うにあたって最低限あってほしいパーツが別売り、または取り付けられない商品もあるので注意してください。通勤や買い物に自転車を使いたいと考えているなら、カゴ、ライト、カギ、スタンド、泥除け、ベルが取り付けられている自転車がおすすめです。"
+        }
+    },
+    {
+        "@type": "Question",
+        "name": "通販で買える自転車は防犯登録されているの？",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "販売店によるが、登録が済んでいない場合が多いです。住んでいない場合、自分で近くの自転車店に行って登録する必要があります。販売店の紹介ページで防犯登録ができるか確認してください。なお、当自転車通販サイトcyma-サイマ-では、お届け先の住所で防犯登録を済ませてから自転車をお送りしています。<a href='https://cyclemarket.jp/guide/anticrime'>詳しくはこちら</a>"
+        }
+    }
+    ]
+}
+</script>
+      <div class="post">
+          <h3>関連記事</h3>
+    <h4 class="post-title__arrow">自転車についてもっと知りたい人はこちら</h4>
+    <div class="article-link-block">
+      <ul>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/191">
+              <dl>
+                  <dt><img alt="自転車の空気入れおすすめ11選 | ママチャリからロードバイク用まで" data-original="https://res.cyclemarket.jp/images/static/article/curation/190_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>自転車の空気入れおすすめ11選 | ママチャリからロードバイク用まで</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/221">
+              <dl>
+                  <dt><img alt="【ロードバイクにも】自転車の鍵のおすすめ11選 | タイプ別の特徴や選び方も紹介" data-original="https://res.cyclemarket.jp/images/static/article/curation/221_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>【ロードバイクにも】自転車の鍵のおすすめ11選 | タイプ別の特徴や選び方も紹介</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/64">
+              <dl>
+                  <dt><img alt="主要な自転車12種類とおすすめ車種19選" data-original="https://res.cyclemarket.jp/images/static/article/curation/64_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>主要な自転車12種類とおすすめ車種19選</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/43">
+              <dl>
+                  <dt><img alt="コスパのいい自転車がほしいあなたへ！おすすめの安い自転車17選" data-original="https://res.cyclemarket.jp/images/static/article/curation/43_06.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>コスパのいい自転車がほしいあなたへ！おすすめの安い自転車17選</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/174">
+              <dl>
+                  <dt><img alt="シティサイクルのおすすめ15選！通勤・通学・買い物をもっと快適に！" data-original="https://res.cyclemarket.jp/images/static/article/curation/174_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>シティサイクルのおすすめ15選！通勤・通学・買い物をもっと快適に！</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/56">
+              <dl>
+                  <dt><img alt="&quot;あなたらしい&quot;おしゃれ自転車が見つかる！6つの系統別に25車種をセレクト" data-original="https://res.cyclemarket.jp/images/static/article/curation/56_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>&quot;あなたらしい&quot;おしゃれ自転車が見つかる！6つの系統別に25車種をセレクト</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/202">
+              <dl>
+                  <dt><img alt="自転車スマホホルダーのおすすめ9選 | 選び方のポイントも紹介" data-original="https://res.cyclemarket.jp/images/static/article/curation/202_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>自転車スマホホルダーのおすすめ9選 | 選び方のポイントも紹介</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/128">
+              <dl>
+                  <dt><img alt="もらってうれしい一台はこれ！プレゼントにぴったりな自転車を贈る相手別に紹介" data-original="https://res.cyclemarket.jp/images/products/S/SK-MIMOSA/SK-MIMOSA_m_15.jpg?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>もらってうれしい一台はこれ！プレゼントにぴったりな自転車を贈る相手別に紹介</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/219">
+              <dl>
+                  <dt><img alt="【ロードバイクにも】自転車用リュック10選 | 通勤向けやおしゃれモデルまで" data-original="https://res.cyclemarket.jp/images/static/article/curation/219_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>【ロードバイクにも】自転車用リュック10選 | 通勤向けやおしゃれモデルまで</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/220">
+              <dl>
+                  <dt><img alt="自転車用ベルのおすすめ8選 | おしゃれなベルからコンパクトなものまで" data-original="https://res.cyclemarket.jp/images/static/article/curation/220_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>自転車用ベルのおすすめ8選 | おしゃれなベルからコンパクトなものまで</dd>
+              </dl>
+            </a>
+          </li>
+      </ul>
+    </div>
+    <h4 class="post-title__arrow">安い自転車についてもっと知りたい人はこちら</h4>
+    <div class="article-link-block">
+      <ul>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/57">
+              <dl>
+                  <dt><img alt="激安の電動アシスト自転車のコスパは？中古や型落ちなど3つのお得な買い方" data-original="https://res.cyclemarket.jp/images/static/article/curation/57_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>激安の電動アシスト自転車のコスパは？中古や型落ちなど3つのお得な買い方</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/77">
+              <dl>
+                  <dt><img alt="【一番お得!?】ロードバイクを格安で手に入れる方法とは？ 安くておすすめのロードバイクも紹介！" data-original="https://res.cyclemarket.jp/images/static/article/curation/77_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>【一番お得!?】ロードバイクを格安で手に入れる方法とは？ 安くておすすめのロードバイクも紹介！</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/114">
+              <dl>
+                  <dt><img alt="安い子供乗せ電動アシスト自転車ランキング&amp;安く買う本当に賢い方法" data-original="https://res.cyclemarket.jp/images/products/A/AM-035-C1/AM-035-C1_m_05.jpg?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>安い子供乗せ電動アシスト自転車ランキング&amp;安く買う本当に賢い方法</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/50">
+              <dl>
+                  <dt><img alt="安いママチャリ7選！おしゃれ・コスパ最強のママチャリを紹介" data-original="https://res.cyclemarket.jp/images/static/article/curation/50_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>安いママチャリ7選！おしゃれ・コスパ最強のママチャリを紹介</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/68">
+              <dl>
+                  <dt><img alt="激安・安い折りたたみ自転車10選-格安で賢く買う方法や注意点も解説-" data-original="https://res.cyclemarket.jp/images/static/article/curation/68_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>激安・安い折りたたみ自転車10選-格安で賢く買う方法や注意点も解説-</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/131">
+              <dl>
+                  <dt><img alt="安い子供自転車6選！16～24インチのおしゃれな自転車を厳選紹介" data-original="https://res.cyclemarket.jp/images/products/A/ATM029/ATM029_m_05.jpg?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>安い子供自転車6選！16～24インチのおしゃれな自転車を厳選紹介</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/55">
+              <dl>
+                  <dt><img alt="安いミニベロ15選 | おしゃれな小径車や軽量モデルも紹介" data-original="https://res.cyclemarket.jp/images/static/article/curation/55_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>安いミニベロ15選 | おしゃれな小径車や軽量モデルも紹介</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/121">
+              <dl>
+                  <dt><img alt="e-bikeの価格はいくら？相場から価格帯の理由＆おすすめ車種まで一挙紹介" data-original="https://res.cyclemarket.jp/images/products/D/DE01S/DE01S_m_09.jpg?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>e-bikeの価格はいくら？相場から価格帯の理由＆おすすめ車種まで一挙紹介</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/82">
+              <dl>
+                  <dt><img alt="自転車を中古で購入できるサービスと中古自転車を買う時の注意点" data-original="https://res.cyclemarket.jp/images/static/article/curation/82_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>自転車を中古で購入できるサービスと中古自転車を買う時の注意点</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/46">
+              <dl>
+                  <dt><img alt="安いだけでいいの？コスパ最強のクロスバイクを予算別に紹介！" data-original="https://res.cyclemarket.jp/images/static/article/curation/46_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>安いだけでいいの？コスパ最強のクロスバイクを予算別に紹介！</dd>
+              </dl>
+            </a>
+          </li>
+      </ul>
+    </div>
+    <h4 class="post-title__arrow">自転車のお役立ち情報についてもっと知りたい人はこちら</h4>
+    <div class="article-link-block">
+      <ul>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/63">
+              <dl>
+                  <dt><img alt="失敗しない自転車の選び方〜大切な2つのポイント〜" data-original="https://res.cyclemarket.jp/images/static/article/curation/63_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>失敗しない自転車の選び方〜大切な2つのポイント〜</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/78">
+              <dl>
+                  <dt><img alt="【メーカー比較】おすすめ電動アシスト自転車を紹介＆バッテリーやタイヤサイズの選び方" data-original="https://res.cyclemarket.jp/uploads/cms/images/78_main.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>【メーカー比較】おすすめ電動アシスト自転車を紹介＆バッテリーやタイヤサイズの選び方</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/79">
+              <dl>
+                  <dt><img alt="【初心者入門】ロードバイクに乗り始めるまでの道のりを徹底解説！" data-original="https://res.cyclemarket.jp/images/static/article/curation/79_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>【初心者入門】ロードバイクに乗り始めるまでの道のりを徹底解説！</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/41">
+              <dl>
+                  <dt><img alt="自転車の買い替えタイミングとポイントはここ！" data-original="https://res.cyclemarket.jp/uploads/cms/images/1201top.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>自転車の買い替えタイミングとポイントはここ！</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/38">
+              <dl>
+                  <dt><img alt="もう迷わない！子供乗せ電動自転車の選び方ガイド&amp;人気メーカー別ランキング" data-original="https://res.cyclemarket.jp/images/static/article/1/38/38_catch2.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>もう迷わない！子供乗せ電動自転車の選び方ガイド&amp;人気メーカー別ランキング</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/117">
+              <dl>
+                  <dt><img alt="電動アシスト自転車は最高のプレゼント！もらって嬉しいおすすめの一台の選び方" data-original="https://res.cyclemarket.jp/images/products/P/PA24WDX/PA24WDX_m_08.jpg?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>電動アシスト自転車は最高のプレゼント！もらって嬉しいおすすめの一台の選び方</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/110">
+              <dl>
+                  <dt><img alt="中学生や高校生必見！通学におすすめの電動自転車と失敗しない選び方を紹介" data-original="https://res.cyclemarket.jp/images/static/article/curation/110_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>中学生や高校生必見！通学におすすめの電動自転車と失敗しない選び方を紹介</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/71">
+              <dl>
+                  <dt><img alt="ロードバイク初心者におすすめの選び方と人気車種・メーカーを紹介" data-original="https://res.cyclemarket.jp/images/static/article/curation/71_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>ロードバイク初心者におすすめの選び方と人気車種・メーカーを紹介</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/72">
+              <dl>
+                  <dt><img alt="【価格帯別】おすすめのロードバイク6選&amp;おすすめ6メーカー、4つの選び方も紹介" data-original="https://res.cyclemarket.jp/images/static/article/curation/72_01.png?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>【価格帯別】おすすめのロードバイク6選&amp;おすすめ6メーカー、4つの選び方も紹介</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="https://cyclemarket.jp/static/article/1/106">
+              <dl>
+                  <dt><img alt="買う前に知っておきたい電動自転車の速度 ～速い？安全？時速24km制限の理由とは～" data-original="https://res.cyclemarket.jp/images/static/article/curation/106_1.jpg?d=185&amp;modify=20210205071106" class="cy-img-lazyload" /></dt>
+                <dd>買う前に知っておきたい電動自転車の速度 ～速い？安全？時速24km制限の理由とは～</dd>
+              </dl>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<nav class="nav-article">
+  <h2 class="title-bordered"><span class="special">cyma特集 その他の特集記事</span></h2>
+  <ul class="list-special">
+      <li>
+    <a href="/product/sale/article_bs/" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="ブリヂストン（BRIDGESTONE）の電動アシスト自転車" width="60px" data-original="https://res.cyclemarket.jp/images/product/sale/article_bs/pc/product_header_pc.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">ブリヂストン（BRIDGESTONE）の電動アシスト自転車</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/product/sale/article_yamaha/" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="ヤマハ（YAMAHA）の電動アシスト自転車" width="60px" data-original="https://res.cyclemarket.jp/images/product/sale/article_yamaha/pc/product_header_pc.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">ヤマハ（YAMAHA）の電動アシスト自転車</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/product/sale/article_pana/" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="パナソニック（panasonic）の電動アシスト自転車" width="60px" data-original="https://res.cyclemarket.jp/images/product/sale/article_pana/pc/product_header_pc.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">パナソニック（panasonic）の電動アシスト自転車</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/product/bikke" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="bikke(ビッケ) ブリヂストン(BRIDGESTONE)の子供乗せ電動自転車" width="60px" data-original="/static/article/20170116/images/pc/fair_main_tit.png" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">bikke(ビッケ) ブリヂストン(BRIDGESTONE)の子供乗せ電動自転車</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/product/pas" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="PAS(パス) ヤマハ(YAMAHA)の子供乗せ電動自転車のおすすめポイントを解説" width="60px" data-original="/static/article/pas/images/pc/main_tit.png" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">PAS(パス) ヤマハ(YAMAHA)の子供乗せ電動自転車のおすすめポイントを解説</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/product/sale/parts_panagyutto/" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="パナソニック（Panasonic）の子乗せ電動自転車 Gyutto（ギュット）の2019モデル 【特典付き】" width="60px" data-original="https://res.cyclemarket.jp/images/product/sale/pana_gyutto_fair/pc/repair_2019/fair_main_tit.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">パナソニック（Panasonic）の子乗せ電動自転車 Gyutto（ギュット）の2019モデル 【特典付き】</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/basicKnowledge" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="自転車の基礎知識まとめ インチの違い/ハンドルの種類/フレームの種類/価格の違い" width="60px" data-original="https://res.cyclemarket.jp/images/static/special/basicKnowledge/banner_special_top_basic-knowledge.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">自転車の基礎知識まとめ インチの違い/ハンドルの種類/フレームの種類/価格の違い</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/antiPunctureCycle" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="ノーパンクタイヤ・耐パンクタイヤって知ってる？パンクに強い自転車を紹介" width="60px" data-original="https://res.cyclemarket.jp/images/static/article/anti-puncture/anti_puncture_02.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">ノーパンクタイヤ・耐パンクタイヤって知ってる？パンクに強い自転車を紹介</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/childrenbicycle" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="失敗しない！子ども自転車の選び方" width="60px" data-original="/static/article/guide_childrenbicycle/images/pc/top.png" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">失敗しない！子ども自転車の選び方</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/product/albelt" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="ブリヂストン（BRIDGESTONE）/アルベルト (Albelt) 定番の通学自転車の最新モデルを紹介 " width="60px" data-original="/static/article/albelt/images/pc/main_tit.jpg" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">ブリヂストン（BRIDGESTONE）/アルベルト (Albelt) 定番の通学自転車の最新モデルを紹介 </span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/1/41" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="買い替えタイミングとポイントはここ！" width="60px" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_20161201.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">買い替えタイミングとポイントはここ！</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/1/25" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="自転車で健康づくりをはじめよう" width="60px" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_20160104.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">自転車で健康づくりをはじめよう</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/20160815" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="親孝行しよう！敬老の日に喜ばれる自転車とは？" width="60px" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_20160815.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">親孝行しよう！敬老の日に喜ばれる自転車とは？</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/20150316" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="初めての子供乗せ自転車、ピッタリの一台の選び方" width="60px" data-original="https://res.cyclemarket.jp/images/static/article/20150316/banner_top.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">初めての子供乗せ自転車、ピッタリの一台の選び方</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/20150301" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="春の新生活シーズン！知らなきゃ損する、快適自転車選びポイント！" width="60px" data-original="https://res.cyclemarket.jp/images/static/article/20150301/banner_top.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">春の新生活シーズン！知らなきゃ損する、快適自転車選びポイント！</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/20151015" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="女性のための自転車の選び方" width="60px" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_20151015.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">女性のための自転車の選び方</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/20151116" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="シティサイクルの機能徹底比較" width="60px" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_20151116.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">シティサイクルの機能徹底比較</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/20150615" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="普段使いNo.1 シティサイクルの選び方" width="60px" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_20150615.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">普段使いNo.1 シティサイクルの選び方</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/1/11" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="自転車の交通ルールを守って 安全自転車LIFE" width="60px" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_20161201.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">自転車の交通ルールを守って 安全自転車LIFE</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/1/16" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="cymaの出荷工場ツアー" width="60px" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_20151001.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">cymaの出荷工場ツアー</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/1/33" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="自転車、雨の日対策まとめ" width="60px" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_20160502.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">自転車、雨の日対策まとめ</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/1/35" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="「mimosa」はこうして生まれました。" width="60px" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_20160701.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">「mimosa」はこうして生まれました。</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+
+  </ul>
+</nav>
+
+
+<div class="btn-pagetop-side">
+  <img src="https://res.cyclemarket.jp/images/common/icon_pagetop.png?modify=20210205071106" alt="page topへ" />
+</div>
+              </section>
+            </div>
+            <aside class="sidebar lo-left">
+                <div id="sidebar-search">
+  <nav class="nav-sidebar nav-top-feature">
+  <p class="align-center"><img src="https://res.cyclemarket.jp/images/top/banner__feature-title-s.png?modify=20210205071106" alt="自転車通販サイト「cyma-サイマ-」" /></p>
+  <ul class="feature-list point new-feature">
+    <li>
+      <a href="/guide/welcome">
+        <img alt="安心価格 | 自転車通販サイト「cyma-サイマ-」" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;content_introduction&#39;,&#39;pc_feature_first&#39;])" data-original="https://res.cyclemarket.jp/images/top/banner_cyma_point-left_title_2.png?modify=20210205071106" class="cy-img-lazyload" />      </a>
+      <a href="/guide/welcome">
+        <img alt="安心価格 | 自転車通販サイト「cyma-サイマ-」" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;content_introduction&#39;,&#39;pc_feature_shipping_cost&#39;])" data-original="https://res.cyclemarket.jp/images/top/banner_cyma_point-left_01_2.png?modify=20210205071106" class="cy-img-lazyload" />      </a>
+      <a href="/guide/fullbuild">
+        <img alt=" | 自転車通販サイト「cyma-サイマ-」" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;content_introduction&#39;,&#39;pc_feature_maintenance&#39;])" data-original="https://res.cyclemarket.jp/images/top/banner_cyma_point-left_02_2.png?modify=20210205071106" class="cy-img-lazyload" />      </a>
+      <a href="/guide/afterService">
+        <img alt="充実のアフターサポート | 自転車通販サイト「cyma-サイマ-」" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;content_introduction&#39;,&#39;pc_feature_support&#39;])" data-original="https://res.cyclemarket.jp/images/top/banner_cyma_point-left_03_2_ns.png?modify=20210205071106" class="cy-img-lazyload" />      </a>
+      <a href="/guide/standardPackNew">
+        <img alt="さらに自転車保険付き | 自転車通販サイト「cyma-サイマ-」" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;content_introduction&#39;,&#39;pc_feature_insurance&#39;])" data-original="https://res.cyclemarket.jp/images/top/banner_cyma_point-left_04_2_ns.png?modify=20210205071106" class="cy-img-lazyload" />      </a>
+    </li>
+  </ul>
+  <p class="nav-top-feature__annotation">
+    ※パンク修理保証・盗難補償・ロードサービス・自転車保険（付帯補償セット）は、新・サイマスタンダード安心パックのご加入者が対象です。<br />
+    ※ 新・サイマスタンダード安心パックのご購入から最大6ヶ月分の月額費用が無料となります。<br />
+    ※7ヶ月目以降はわずか500円/月でご継続いただけます。<br />
+    ※組立配送料については<a href="/guide/payment">こちら</a>&nbsp;&gt;&gt;
+  </p>
+</nav>
+  <nav class="nav-sidebar tradein">
+    <ul>
+                                          
+      <li>
+        <div class="banner">
+          <a href="/product/sale/baa_products/">
+            <img alt="BAAシリーズ" data-original="https://res.cyclemarket.jp/images/product/sale/baa_products/pc/top_sidebar_pc.png?modify=20210205071106" class="cy-img-lazyload" />            <span>安心して乗るならBAA</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <h2 class="title-bordered">自転車を探す</h2>
+  <nav class="nav-search" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])">
+    <h3>カテゴリから探す</h3>
+    <ul>
+      <li>
+        <a href="/product/category_128/">全ての自転車一覧</a>      </li>
+              <li>
+          <a href="/product/category_1/">シティサイクル・ママチャリ</a>                  </li>
+              <li>
+          <a href="/product/category_32/">折りたたみ自転車</a>                  </li>
+              <li>
+          <a href="/product/category_2/">ミニベロ(小径車)</a>                  </li>
+              <li>
+          <a href="/product/category_4/">スポーツ自転車</a>                      <ul class="sub-contents">
+              <li>
+                <a href="/product/category_4/use_type_11/">クロスバイク</a>              </li>
+              <li>
+                <a href="/product/category_4/use_type_12/">ロードバイク</a>              </li>
+            </ul>
+                  </li>
+              <li>
+          <a href="/product/category_8/">電動自転車・電動アシスト自転車</a>                      <ul class="sub-contents">
+              <li>
+                <a href="/product/category_8/maker_1/">ブリヂストン</a>              </li>
+              <li>
+                <a href="/product/category_8/maker_19/">パナソニック</a>              </li>
+              <li>
+                <a href="/product/category_8/maker_36/">ヤマハ</a>              </li>
+            </ul>
+                  </li>
+              <li>
+          <a href="/product/category_64/">子供乗せ自転車</a>                  </li>
+              <li>
+          <a href="/product/category_16/">こども用自転車</a>                  </li>
+                </ul>
+  </nav>
+  <nav class="nav-search" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])">
+    <h3>価格から探す</h3>
+    <ul>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/price_range_1/">〜¥40,000</a></li>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/price_range_2/">¥40,001〜80,000</a></li>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/price_range_3/">¥80,001〜120,000</a></li>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/price_range_4/">¥120,001〜</a></li>
+          </ul>
+  </nav>
+  <nav class="nav-search" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])">
+    <h3>サイズから探す</h3>
+    <ul>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/size_2/">14インチ</a></li>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/size_3/">16インチ</a></li>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/size_5/">20インチ</a></li>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/size_6/">22インチ</a></li>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/size_7/">24インチ</a></li>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/size_8/">26インチ</a></li>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/size_9/">27インチ</a></li>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/size_11/">700C</a></li>
+              <li><a onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])" href="/product/category_128/size_13/">27.5インチ</a></li>
+          </ul>
+  </nav>
+  <nav class="nav-search" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_search'])">
+    <h3>セール・ランキングから探す</h3>
+    <ul>
+      <li><a href="/product/ranking">売れ筋ランキングから探す</a></li>
+    </ul>
+  </nav>
+  <h2 class="margin-t15 title-bordered">最新の自転車特集</h2>
+  <nav class="nav-sidebar" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])">
+    <ul>
+        <li>
+    <a href="/product/sale/article_bs/" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="ブリヂストン（BRIDGESTONE）の電動アシスト自転車" width="60px" data-original="https://res.cyclemarket.jp/images/product/sale/article_bs/pc/product_header_pc.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">ブリヂストン（BRIDGESTONE）の電動アシスト自転車</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/product/sale/article_yamaha/" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="ヤマハ（YAMAHA）の電動アシスト自転車" width="60px" data-original="https://res.cyclemarket.jp/images/product/sale/article_yamaha/pc/product_header_pc.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">ヤマハ（YAMAHA）の電動アシスト自転車</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/product/sale/article_pana/" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="パナソニック（panasonic）の電動アシスト自転車" width="60px" data-original="https://res.cyclemarket.jp/images/product/sale/article_pana/pc/product_header_pc.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">パナソニック（panasonic）の電動アシスト自転車</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/product/bikke" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])" >
+            <p class="thumb">
+        <img alt="bikke(ビッケ) ブリヂストン(BRIDGESTONE)の子供乗せ電動自転車" width="60px" data-original="/static/article/20170116/images/pc/fair_main_tit.png" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">bikke(ビッケ) ブリヂストン(BRIDGESTONE)の子供乗せ電動自転車</span><br />
+        <span class="note headline"></span>
+      </p>
+          </a>
+  </li>
+    </ul>
+  </nav>
+
+  <h2 class="margin-t15 title-bordered">人気の自転車特集</h2>
+  <nav class="nav-sidebar" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])">
+    <ul>
+        <li>
+    <a href="/static/article/1/43" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])">
+            <p class="thumb">
+        <img alt="コスパのいい自転車がほしいあなたへ！" width="60" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_43.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">コスパのいい自転車がほしいあなたへ！</span><br />
+        <span class="note headline">おすすめの安い自転車17選</span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/1/56" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])">
+            <p class="thumb">
+        <img alt="あなたらしいおしゃれ自転車が見つかる！" width="60" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_56.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">あなたらしいおしゃれ自転車が見つかる！</span><br />
+        <span class="note headline">25車種をセレクト</span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/1/46" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])">
+            <p class="thumb">
+        <img alt="コスパ最強のクロスバイク！" width="60" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_46.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">コスパ最強のクロスバイク！</span><br />
+        <span class="note headline">予算別に紹介！</span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/1/38" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])">
+            <p class="thumb">
+        <img alt="もう迷わない！子乗せ電動アシスト自転車の選び方ガイド" width="60" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_38.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">もう迷わない！子乗せ電動アシスト自転車の選び方ガイド</span><br />
+        <span class="note headline">人気メーカーのおすすめ車種まとめ</span>
+      </p>
+          </a>
+  </li>
+  <li>
+    <a href="/static/article/1/42" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc', 'an_nav_special'])">
+            <p class="thumb">
+        <img alt="クロスバイクのおすすめ15選" width="60" data-original="https://res.cyclemarket.jp/images/top/side/banner_top_side_article_47.png?d=60&amp;modify=20210205071106" class="cy-img-lazyload" />      </p>
+      <p class="body">
+        <span class="title">クロスバイクのおすすめ15選</span><br />
+        <span class="note headline">街乗り・通勤通学向け車種や人気メーカーを紹介</span>
+      </p>
+          </a>
+  </li>
+    </ul>
+  </nav>
+</div>
+
+
+            </aside>
+        </div>
+        <footer id="footer" onclick="_gaq.push(['_trackEvent', 'static_article_show_pc' , 'an_nav_footer'])">
+  <div id="page-top-wrap">
+    <nav id="page-top">
+      <p id="btn-page-top" class="btn-page-top">PAGE TOP</p>
+    </nav>
+  </div>
+  <div id="nav-customer-support">
+    <div id="nav-tel">
+      <p>
+        <span class="title">お問い合わせ</span><span class="description">お気軽にご相談下さい！</span><a href="/contact/faq">よくあるご質問はコチラ！</a>
+        WEBからのお問い合わせ：<b><a href="/contact/faq#internal-link-contact-form">お問い合わせページ</a></b></p>
+    </div>
+  </div>
+  <div id="nav-footer-wrap">
+    <nav id="nav-footer-guide">
+      <div class="left">
+        <div class="wrap">
+          <h2 class="title-left-bordered">お支払い方法について</h2>
+          <p>以下のお支払い方法をご利用いただけます。</p>
+          <div class="body">
+            <h3 class="title-bordered">クレジットカード</h3>
+            <img width="320" src="https://res.cyclemarket.jp/images/common/credit_card_smbc_gmo.png?modify=20210205071106" alt="VISA, Mastercard, JCB, Diners, AMEX">
+            <p class="note">※一括支払い／分割支払い／リボ払いからお選びいただけます。</p>
+            <p class="note accent">※クレジットカード決済手数料は0円です。</p>
+          </div>
+          <div class="body">
+            <h3 class="title-bordered">コンビニ決済(前払い)</h3>
+            <img width="240" src="https://res.cyclemarket.jp/images/common/convenience.png?modify=20210205071106" alt="利用可能コンビニ">
+            <p>全国主要コンビニエンスストアにてお支払いいただけます。</p>
+            <p class="note accent">※コンビニ決済手数料は52円(税別)です</p>
+            <p class="note">※各コンビニ毎のお支払い方法の詳細は、商品ご購入後にcymaから送信される<br>「ご注文内容確認メール」に記載してあります。</p>
+            <p class="note">※「Y's Road cyma-サイマ-店」の商品は対象外となります。</p>
+          </div>
+          <div class="body">
+            <h3 class="title-bordered">PayPay決済</h3>
+            <img alt="PayPayロゴ" class="paypayLogo" src="https://res.cyclemarket.jp/images/common/paypay/logo_paypay.png?modify=20210205071106" />
+            <p class="note">
+              ※PayPay決済完了後に、PayPayアプリから加盟店サイト（&efDot;サンクスページ、加盟店決済完了ページ）に戻らない場合、決済が取消扱いとなります。<br>
+              ※ジャンボ当選していた場合にも、付与予定であったボーナスが強制的に取消となります。<br>
+              ジャンボ当選時は、当選画面右上の『×』ボタンを押して、加盟店サイトに必ず戻ってください。<br>
+              いかなる場合でも、ボーナス復元は実施いたしかねますのでご了承ください。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="wrap">
+          <h2 class="title-left-bordered">出荷と組立配送料について</h2>
+          <a href="/static/page_fullbuild"><img src="https://res.cyclemarket.jp/images/common/banner/banner_fullbuild_header.png?modify=20210205071106" height="35" alt="cymaは自転車完全組立で発送"></a>
+          <p>
+            ※「Y's Road cyma-サイマ-店」の商品は対象外となります。<br>
+            ※組立配送料については<a href="/guide/payment">こちら</a>&nbsp;&gt;&gt;
+          </p>
+          <div class="body">
+            <h3 class="title-bordered">組立配送料について</h3>
+            <p>cymaでは、完全組立を行った完成車の状態でお客様に自転車をお届けします。完全組立状態の自転車配送でも、組立配送料¥1,980~。「自転車は送料が高い…」「届いた自転車を組立てなきゃいけない…」、cymaはそんな不満も解消します。<br>
+              <span class="attention">※組立配送料については<a href="/guide/payment">こちら</a>&nbsp;&gt;&gt;</span>
+            </p>
+          </div>
+          <div class="body">
+            <h3 class="title-bordered">出荷について</h3>
+            <p>現在、ご注文から最短翌日～3営業日(土日祝除く)前後で当社より商品を出荷致しております。<br>
+            </p>
+            <p><a href="/static/page_shipping">詳しくはこちら</a></p>
+          </div>
+        </div>
+        <div class="wrap corporate">
+          <h2 class="title-left-bordered">法人・複数台購入をご検討の方へ</h2>
+          <div class="body">
+            <a href="/static/page_corporate?t_ref_tb_p=right_corporate">
+              <img width="180" src="https://res.cyclemarket.jp/images/top/side/banner_top_side_corporate.png?modify=20210205071106" alt="法人のお客様へ | 自転車通販サイト「cyma-サイマ-」">
+            </a>
+            <p>cymaでは、会社、お店、社員寮、マンション管理組合等多くの法人のお客様にもご利用いただいております。<br>安心のサポートと、自転車に関する専門的な内容にも対応できる体制を整えておりますので、お気軽にご相談くださいませ。<br><a href="/static/page_corporate">お問い合わせはこちら</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav id="nav-footer">
+      <ul>
+        <li><strong>cymaについて</strong>
+          <ul>
+            <li><a href="/static/page_welcome">cyma -サイマ- とは</a></li>
+            <li><a href="/static/page_fullbuild">完成車でのお届け</a></li>
+            <li><a href="https://www.a-tm.co.jp/about/outline/">運営会社</a></li>
+            <li><a href="http://www.a-tm.co.jp/recruit/requirements/career/ec-byciclemechanic/">採用情報（自転車整備士）</a></li>
+          </ul>
+        </li>
+        <li><strong>お買い物ガイド</strong>
+          <ul>
+            <li><a href="/static/page_flow">ご注文までの流れ</a></li>
+            <li><a href="/static/page_shipping">組立配送料と出荷について</a></li>
+            <li><a href="/static/page_payment">お支払い方法について</a></li>
+            <li><a href="/static/page_counterPunctureCare2018">お店でパンクCARE（ケア）について</a></li>
+            <li><a href="/static/page_roadService2018">自転車ロードサービスについて</a></li>
+            <li><a href="/static/page_standardPackNew">新・サイマスタンダード安心パックについて</a></li>
+            <li><a href="/static/page_parts">パーツのご購入について</a></li>
+            <li><a href="/static/page_corporate">法人・複数台購入をご検討の方へ</a></li>
+            <li><a href="/track/index">配送状況のご確認はこちら</a></li>
+          </ul>
+        </li>
+        <li><strong>取扱商品</strong>
+          <ul>
+            <li><a href="/product/category_1/">シティサイクル・ママチャリ</a></li>
+            <li><a href="/product/category_32/">折りたたみ自転車</a></li>
+            <li><a href="/product/category_2/">ミニベロ</a></li>
+            <li>
+              <a href="/product/category_4/">スポーツ自転車</a>
+              <ul class="sub-contents">
+                <li><a href="/product/category_4/use_type_11/">クロスバイク</a></li>
+                <li><a href="/product/category_4/use_type_12/">ロードバイク</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/product/category_8/">電動自転車・電動アシスト自転車</a>
+              <ul class="sub-contents">
+                <li><a onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;an_nav_seach&#39;])" href="/product/sale/article_bs/">ブリジストン</a></li>
+                <li><a onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;an_nav_seach&#39;])" href="/product/sale/article_pana/">パナソニック</a></li>
+                <li><a onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;static_article_show_pc&#39;, &#39;an_nav_seach&#39;])" href="/product/sale/article_yamaha/">ヤマハ</a></li>
+              </ul>
+            </li>
+            <li><a href="/product/category_64/">子供乗せ自転車</a></li>
+            <li><a href="/product/category_16/">こども用自転車</a></li>
+          </ul>
+        </li>
+        <li><strong>コミュニティ</strong>
+          <ul>
+            <li class="social-facebook">
+              <a href="https://www.facebook.com/cyma.cycle" target="_blank">facebook</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <dl class="articleBlock">
+      <dt class="articleBlock__title">自転車のおすすめ記事一覧</dt>
+      <dd class="articleBlock__content">
+        <ul class="articleBlock__list">
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/static/article/1/38">もう迷わない！子乗せ電動アシスト自転車の選び方ガイド&amp;人気メーカー別ランキング</a></li>
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/static/article/1/39">ミニベロのおすすめ売れ筋ランキングTOP10 | 人気の小径車やメーカーを紹介</a></li>
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/static/article/1/42">クロスバイクのおすすめ15選 | 街乗り・通勤通学向け車種や人気メーカーを紹介</a></li>
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/static/article/1/52">【2020最新】電動アシスト自転車のおすすめ30選！用途別・メーカー別に紹介＆注意点も解説</a></li>
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/static/article/1/59">自転車のおすすめガイド | 通勤向けから安い車種まで人気自転車を紹介</a></li>
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/static/article/1/124">【2020年】おすすめのe-bike19選｜人気車種の売れ筋ランキングも紹介</a></li>
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/static/article/1/165">折りたたみ自転車のおすすめ人気ランキング | 軽量モデルや人気メーカーも</a></li>
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/static/article/1/66">【2020最新】ロードバイク主要20メーカーの特徴/評判と初心者向けモデルを紹介</a></li>
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/static/article/1/49">クロスバイクとロードバイクの違いや特徴とは？どっちを買うべきか目的別に解説！</a></li>
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/static/article/1/43">コスパのいい自転車がほしいあなたへ！おすすめの安い自転車17選</a></li>
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/static/article/1/130">自転車を安く買うならどこの通販サイト？2万円以下の格安自転車も紹介</a></li>
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/static/article/1/56">あなたらしいおしゃれ自転車が見つかる！6つの系統別に25車種をセレクト</a></li>
+          <li class="articleBlock__item"><a class="articleBlock__link" href="/product/sale/commute/">自転車通勤におすすめの自転車を距離/時間別に紹介！</a></li>
+        </ul>
+      </dd>
+    </dl>
+    <div id="footer-tagline">
+      <p class="tagline">「いい自転車を、もっと手に入れやすく。」</p>
+      <a href="/">
+        <img src="https://res.cyclemarket.jp/images/common/logo_2x.png?modify=20210205071106" alt="自転車を買うなら自転車通販サイト「cyma -サイマ-」">
+      </a>
+    </div>
+    <nav id="nav-footer-terms">
+      <ul class="inline-link no-underline">
+        <li><a href="/static/page_terms">利用規約</a></li>
+        <li><a href="http://www.a-tm.co.jp/privacypolicy/">プライバシーポリシー</a></li>
+        <li><a href="/static/page_legal">特定商取引に関する表示</a></li>
+      </ul>
+    </nav>
+    <nav id="nav-corporate-information">
+      <p class="head">
+        <img width="150" src="https://res.cyclemarket.jp/images/common/logo__ateam.png?modify=20210205071106" alt="株式会社エイチーム"><span>自転車通販サイト「cyma-サイマ」は株式会社エイチームが運営するサービスです。</span>
+      </p>
+      <ul>
+        <li>
+          <div class="wrap">
+            <div class="image">
+              <img src="https://res.cyclemarket.jp/images/common/logo__jpx.png?modify=20210205071106" alt="自転車通販サイト「cyma-サイマ-」は、株式会社エイチーム（東証一部上場）が運営しています">
+            </div>
+            <p class="text">自転車通販サイト「cyma-サイマ-」は、株式会社エイチーム（東証一部上場）が運営するサービスです。<br> 証券コード：3662</p>
+          </div>
+        </li>
+        <li>
+          <div class="wrap">
+            <a href="https://www.au-sonpo.co.jp/pc/lp_zeroaction/" target="_blank">
+              <div class="image">
+                <img height="80" src="https://res.cyclemarket.jp/images/common/icon_zero-action.png?modify=20210205071106" alt="かながわゼロアクション">
+              </div>
+            </a>
+            <p class="text">当社は、神奈川県自転車交通安全官民連携プロジェクト「〜自転車事故0を目指す活動〜かながわゼロアクション」に参画しています。</p>
+          </div>
+        </li>
+        <li>
+          <div class="wrap">
+            <div class="image">
+              <img src="https://res.cyclemarket.jp/images/common/qrcode__pc-footer-nav.gif?modify=20210205071106" alt="外出先でも、自転車買うなら「cyma -サイマ-」">
+            </div>
+            <p class="text"><b>外出先でもcyma-サイマ-！</b><br>スマートフォンからでも、24時間いつでもご注文出来ます！</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <p id="copyright">
+      <small>&copy; 2021 Ateam Inc.</small>
+    </p>
+  </div>
+</footer>
+
+      </div>
+      
+        
+<div class="popupModal js-popupQuestionnaire" data-odd1="1">
+  <form class="js-popupQuestionnaireForm popupModal__frame">
+    <p class="popupModal__title">どんな自転車をお探しですか？</p>
+    <div class="popupModal__inner">
+      <div class="popupModal__content">
+        <p class="popupModal__subTitle">1.自転車の種類</p>
+        <ul class="inuptList">
+          <li class="inuptList__item">
+            <label class="inuptList__label inputSelects">
+              <input type="radio" name="category" class="inputSelects__input" value="電動自転車(ママチャリ)">
+              <span class="inputSelects__radio"></span>
+              <p class="inuptList__name">電動自転車<br><span class="inuptList__name--small">(ママチャリ)</span></p>
+            </label>
+          </li>
+          <li class="inuptList__item">
+            <label class="inuptList__label inputSelects">
+              <input type="radio" name="category" class="inputSelects__input" value="電動自転車(子乗せ用として)">
+              <span class="inputSelects__radio"></span>
+              <p class="inuptList__name">電動自転車<br><span class="inuptList__name--small">(子乗せ用として)</span></p>
+            </label>
+          </li>
+          <li class="inuptList__item">
+            <label class="inuptList__label inputSelects">
+              <input type="radio" name="category" class="inputSelects__input" value="ママチャリ">
+              <span class="inputSelects__radio"></span>
+              <p class="inuptList__name">ママチャリ</p>
+            </label>
+          </li>
+          <li class="inuptList__item">
+            <label class="inuptList__label inputSelects">
+              <input type="radio" name="category" class="inputSelects__input" value="クロスバイク">
+              <span class="inputSelects__radio"></span>
+              <p class="inuptList__name">クロスバイク</p>
+            </label>
+          </li>
+          <li class="inuptList__item">
+            <label class="inuptList__label inputSelects">
+              <input type="radio" name="category" class="inputSelects__input" value="ロードバイク">
+              <span class="inputSelects__radio"></span>
+              <p class="inuptList__name">ロードバイク</p>
+            </label>
+          </li>
+          <li class="inuptList__item">
+            <label class="inuptList__label inputSelects">
+              <input type="radio" name="category" class="inputSelects__input" value="折りたたみ自転車/ミニベロ">
+              <span class="inputSelects__radio"></span>
+              <p class="inuptList__name inuptList__name--medium">折りたたみ自転車<br>ミニベロ</p>
+            </label>
+          </li>
+          <li class="inuptList__item">
+            <label class="inuptList__label inputSelects">
+              <input type="radio" name="category" class="inputSelects__input" value="こども用自転車">
+              <span class="inputSelects__radio"></span>
+              <p class="inuptList__name">子供用自転車</p>
+            </label>
+          </li>
+          <li class="inuptList__item">
+            <label class="inuptList__label inputSelects">
+              <input type="radio" name="category" class="inputSelects__input" value="まだ決めていない">
+              <span class="inputSelects__radio"></span>
+              <p class="inuptList__name inuptList__name--medium">まだ決めていない</p>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="popupModal__content">
+        <p class="popupModal__subTitle">2.用途<span class="popupModal__subTitle--small">(複数回答可)</span></p>
+        <ul class="inuptList">
+          <li class="inuptList__item inuptList__item--col3">
+            <label class="inuptList__label inputSelects">
+              <input type="checkbox" name="use" class="inputSelects__input" value="お買い物">
+              <span class="inputSelects__checkbox"></span>
+              <p class="inuptList__name">お買い物</p>
+            </label>
+          </li>
+          <li class="inuptList__item inuptList__item--col3">
+            <label class="inuptList__label inputSelects">
+              <input type="checkbox" name="use" class="inputSelects__input" value="こどもの送迎">
+              <span class="inputSelects__checkbox"></span>
+              <p class="inuptList__name">子供の送迎</p>
+            </label>
+          </li>
+          <li class="inuptList__item inuptList__item--col3">
+            <label class="inuptList__label inputSelects">
+              <input type="checkbox" name="use" class="inputSelects__input" value="通勤">
+              <span class="inputSelects__checkbox"></span>
+              <p class="inuptList__name">通勤</p>
+            </label>
+          </li>
+          <li class="inuptList__item inuptList__item--col3">
+            <label class="inuptList__label inputSelects">
+              <input type="checkbox" name="use" class="inputSelects__input" value="通学">
+              <span class="inputSelects__checkbox"></span>
+              <p class="inuptList__name">通学</p>
+            </label>
+          </li>
+          <li class="inuptList__item inuptList__item--col3">
+            <label class="inuptList__label inputSelects">
+              <input type="checkbox" name="use" class="inputSelects__input" value="趣味">
+              <span class="inputSelects__checkbox"></span>
+              <p class="inuptList__name">趣味</p>
+            </label>
+          </li>
+          <li class="inuptList__item inuptList__item--col3">
+            <label class="inuptList__label inputSelects">
+              <input type="checkbox" name="use" class="inputSelects__input" value="その他">
+              <span class="inputSelects__checkbox"></span>
+              <p class="inuptList__name">その他</p>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="popupModal__content">
+        <p class="popupModal__subTitle">3.ご予算<span class="popupModal__subTitle--small">(複数回答可)</span></p>
+        <ul class="inuptList">
+          <li class="inuptList__item inuptList__item--col3">
+            <label class="inuptList__label inputSelects">
+              <input type="checkbox" name="budget" class="inputSelects__input" value="2万円以下">
+              <span class="inputSelects__checkbox"></span>
+              <p class="inuptList__name">2万円以下</p>
+            </label>
+          </li>
+          <li class="inuptList__item inuptList__item--col3">
+            <label class="inuptList__label inputSelects">
+              <input type="checkbox" name="budget" class="inputSelects__input" value="2-3万円">
+              <span class="inputSelects__checkbox"></span>
+              <p class="inuptList__name">2〜3万円</p>
+            </label>
+          </li>
+          <li class="inuptList__item inuptList__item--col3">
+            <label class="inuptList__label inputSelects">
+              <input type="checkbox" name="budget" class="inputSelects__input" value="3-5万円">
+              <span class="inputSelects__checkbox"></span>
+              <p class="inuptList__name">3〜5万円</p>
+            </label>
+          </li>
+          <li class="inuptList__item inuptList__item--col3">
+            <label class="inuptList__label inputSelects">
+              <input type="checkbox" name="budget" class="inputSelects__input" value="5-7万円">
+              <span class="inputSelects__checkbox"></span>
+              <p class="inuptList__name">5〜7万円</p>
+            </label>
+          </li>
+          <li class="inuptList__item inuptList__item--col3">
+            <label class="inuptList__label inputSelects">
+              <input type="checkbox" name="budget" class="inputSelects__input" value="7-10万円">
+              <span class="inputSelects__checkbox"></span>
+              <p class="inuptList__name">7〜10万円</p>
+            </label>
+          </li>
+          <li class="inuptList__item inuptList__item--col3">
+            <label class="inuptList__label inputSelects">
+              <input type="checkbox" name="budget" class="inputSelects__input" value="10万円以上">
+              <span class="inputSelects__checkbox"></span>
+              <p class="inuptList__name">10万円以上</p>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="popupModal__submitArea">
+      <button type="button" name="button" class="popupModal__button js-popupQuestionnaireSubmit" data-category="click_question" data-action="banner" data-label="answer" disabled>回答して500円OFFクーポンをGET！</button>
+    </div>
+  </form>
+  <div class="closeButton closeButton--outsideTopRight closeButton--white js-popupQuestionnaireClose"></div>
+</div>
+<div class="popupModal__overlay js-popupQuestionnaire js-popupQuestionnaireClose"></div>
+
+<div class="fixedBanner js-popupQuestionnaireOpen">
+  <img class="fixedBanner__image" alt="アンケートに答えてクーポンGET！" data-category="click_question" data-action="banner" data-label="modal_open" src="https://res.cyclemarket.jp/images/common/popup/questionnaire/banner_questionnaire_pc.png?modify=20210205071106" />
+</div>
+
+<div class="fixedBanner js-fixedBanner js-popupQuestionnaireBanner">
+  <a class="js-popupQuestionnaireBannerLink  js-popupQuestionnaireBannerClose" data-category="click_question" data-action="banner" data-label="banner_pickup" href="/">
+    <img class="fixedBanner__image fixedBanner__image--first" alt="ご回答をもとに、ご希望に沿う商品をピックアップさせていただきました！" src="https://res.cyclemarket.jp/images/common/popup/questionnaire/banner_questionnaire_rear_pc.png?modify=20210205071106" />
+</a>  <div class="closeButton closeButton--small js-popupQuestionnaireBannerClose"></div>
+</div>
+<div class="fixedBanner fixedBanner--pickupSmall js-popupQuestionnaireSmallBanner">
+  <a class="js-popupQuestionnaireBannerLink" data-category="click_question" data-action="banner" data-label="banner_pickup_small" href="/">
+    <img alt="おすすめ車種を見る" src="https://res.cyclemarket.jp/images/common/popup/questionnaire/icon_questionnaire_pc.png?modify=20210205071106" />
+</a></div>
+
+  <div class="segmentCoupon segmentCoupon--popup js-notApplicable js-couponCopy">
+    <p class="segmentCoupon__title">ご回答頂き誠にありがとうございました！</p>
+    <p class="segmentCoupon__name segmentCoupon__name--other">500円クーポンコード</p>
+    <p class="segmentCoupon__code js-couponCopyTarget">THANKS208</p>
+    <p class="segmentCoupon__annotation">商品をカートに追加した後の<span class="segmentCoupon__annotation--emphasis">「ご購入手続きページ」</span><br>にてクーポンコードをご入力ください。<br>有効期限: 2020/8/1〜2021/03/31</p>
+    <div class="closeButton closeButton--small js-popupQuestionnaireBannerClose"></div>
+  </div>
+  <div class="fixedBanner fixedBanner--pickupSmall js-notApplicableSmallBanner">
+    <img alt="クーポンを見る" src="https://res.cyclemarket.jp/images/common/popup/questionnaire/icon_questionnaire2_pc.png?modify=20210205071106" />
+  </div>
+
+
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/lib/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js" defer></script>
+      <script type="text/javascript">
+        var ytmPageData = {
+          "navigation": {
+            "pageName":"static_article_show",
+            "customer":""
+          },
+                  };
+    (function () {
+      var tagjs = document.createElement("script");
+      var s = document.getElementsByTagName("script")[0];
+      tagjs.async = true;
+      tagjs.src = "//s.yjtag.jp/tag.js#site=LhmWB8O";
+      s.parentNode.insertBefore(tagjs, s);
+    }());
+  </script>
+  <noscript>
+    <iframe src="//b.yjtag.jp/iframe?c=LhmWB8O" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  </noscript>
+
+    <script src="/assets/pc/common-2a026104060bb127d3b0745bd976bdf8a6172006073d248b8e6887c949627215.js" data-turbolinks-track="reload"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      <script src="/assets/pc/article-940dcfef564342a94caf3f4c1d5bae43c9baf04e3141d8271d26735856cd7411.js" data-turbolinks-track="reload"></script>
+
+  </body>
+</html>
