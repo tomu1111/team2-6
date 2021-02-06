@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
 $(function() {
@@ -30,45 +31,47 @@ $(function() {
 <body>
     <header id="header" class="wrapper">
         <h1 class="header-logo">
-            <a href="#"><img src="img/166430.png" alt="自転車シルエット"></a>
+            <a href="#"><img src="image/166430.png" alt="自転車シルエット"></a>
         </h1>
         <nav>
             <ul class="nav-ul">
-                <li><a href="#">テキスト</a></li>
-                <li><a href="#">テキスト</a></li>
+                <li><a href="#history-position">歴史</a></li>
+                <li><a href="#cinema-position">映画と自転車</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="cinema">自転車と映画の歴史</div>　
+        <div class="cinema title" id="history-position">自転車と映画の歴史</div>
         <div class="cinema2">自転車の爽快感と映画の疾走感が抜群の相性<br>人間の探究心をくすぐる三作品をご用意</div>
 
-            <div class="cinema3">映画と自転車</div>
+            <div class="cinema3 title" id="cinema-position">映画と自転車</div>
             <ul class="aa">
                 <li>
-                  <a id="btnChange"><img src="image/1.jpeg" alt="写真" width="300" height="200" /></a>
-                <a href= "cycycle/index.html">
+                <a id="btnChange"><img src="image/1.jpeg" alt="写真" width="300" height="200" /></a>
+                <a href= "sportcycle/index.html">
                 <h3>マイインターン</h3>
-                <p>女性社長ジュールズ（アン・ハサウェイ）が<br>高齢者インターンで雇用した70才の部下ベン<br>（ロバート・デ・ニーロ）という、普通なら<br>出会わない2人に友情が芽生える物語。</p>
+                <div>女性社長ジュールズ（アン・ハサウェイ）が高齢者インターンで雇用した70才の部下ベン（ロバート・デ・ニーロ）という、普通なら出会わない2人に友情が芽生える物語。</div>
                 </a>
                 </li>
                 <li>
-                  <a id="btnChange2"><img src="image/4.jpeg" alt="写真" width="300" height="200" /></a>
+                <a id="btnChange2"><img src="image/4.jpeg" alt="写真" width="300" height="200" class="trimming" /></a>
                 <a href= "cycycle/index.html">
                 <h3>昼顔</h3>
-                <p>近年世間を賑わせている”不倫”がテーマの内容<br>で、大きく話題になっています。</p>
-                </a>
-                </li>
+                <div>近年世間を賑わせている”不倫”がテーマの内容で、大きく話題になっています。</div>
+            </a></li>
                 <li>
-                  <a id="btnChange3"><img src="image/3.jpeg" alt="写真" width="300" height="200" /></a>
-                <a href="cycycle/index3.html">
+                <a id="btnChange3"><img src="image/3.jpeg" alt="写真" width="300" height="200" /></a>
+                <a href="cycycle/index.html">
                 <h3>ET</h3>
-                <p>当時最先端の技術を駆使した映像と、少年と<br>宇宙人の切なくも暖かい、深い絆を描いた感動作</p>
-                </a>
-                </li>
+
+                <div>当時最先端の技術を駆使した映像と、少年と宇宙人の切なくも暖かい、深い絆を描いた感動作</div>
+
+            </a></li>
             </ul>
-            <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/mkidOc7gy-g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-　　　　　　　<button id="btnChange">change</button>
+            <div class="youtube">
+            <iframe class="iframe" width="900" height="500" src="https://www.youtube.com/embed/mkidOc7gy-g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
     </main>
   <footer>
     <div id="page_top"><a href="#"></a></div>

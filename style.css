@@ -1,11 +1,30 @@
+html {
+    overflow-x : hidden;
+    overflow-y : auto;
+    font-size: 24px;
+    font-family: "Nico Moji";
+}
 
 body {
-    width: 1200px;
-    height: auto;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+    color: #333;
+}
+
+main {
+    height: 1280px;
+    margin: 0 auto;
 }
 
 .wrapper {
-    max-width: 960px;
+    max-width: 1280px;
     margin: 0 auto 100px auto;
     padding: 0 4%;
     text-align: center;
@@ -48,7 +67,7 @@ body {
 --------------*/
 footer {
     background: #333;
-    height: 120px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +110,9 @@ ul {
     right: 50px;
     bottom: 50px;
     background: #3f98ef;
-    opacity: 0.6;
+    /* opacity: 0.6; */
+    /* ディスプレイ幅が広がっても、コンテンツ内に納める。 */
+    right: calc(50% - 550px); 
   }
   #page_top a{
     position: relative;
@@ -118,33 +139,72 @@ ul {
   }
 
 
+/* ----------
+コンテンツ領域
+------------*/
+
+.title {
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+
+img {
+    object-fit: cover; 
+}
+
+img.trimming {
+    object-position: 100% 15%;
+}
+
 .cinema{
-    position: relative;
-    left: 450px;
-    font: bold;
+    /* position: relative;
+    left: 450px; */
+    font-weight: bold;
     color: violet;
+    text-align: center;
 
 }
 .cinema2{
-    position: relative;
-    left: 350px;
+    /* position: relative;
+    left: 350px; */
     padding: 20px;
-    font-size: 20px;
+    font-size: 1.4rem;
+    text-align: center;
 }
 .cinema3{
-    position: relative;
-    left: 470px;
-    font: bold;
+    /* position: relative;
+    left: 470px; */
+    font-weight: bold;
     color: violet;
+    text-align: center;
 }
 h3{
     color:rgb(114, 52, 165);
     text-align: center;
+    margin:5px 0;
 }
-p{
-    font-size: 13px;
+
+ul.aa {
+    display: flex;
+    justify-content: space-around;
 }
+
 ul.aa li {
-   padding:10px;
-   float: left;
-  }
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 300px;
+}
+
+ul.aa a{
+    align-self: center;
+}
+
+ul.aa div {
+    font-size: 0.8rem;
+}
+
+.youtube {
+    margin: 50px auto;
+    text-align: center;
+}
