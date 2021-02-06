@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:active, a:visited {
+a,a:hover, a:active, a:visited {
     color: #333;
 }
 
