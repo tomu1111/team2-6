@@ -7,6 +7,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function() {
+    $("#btnChange").click(function() {
+        $(".iframe").attr("src", "https://www.youtube.com/embed/eMs-qYM_AeM");
+    });
+});
+$(function() {
+    $("#btnChange2").click(function() {
+        $(".iframe").attr("src", "https://www.youtube.com/embed/RZXB10uEq2Y");
+    });
+});
+$(function() {
+    $("#btnChange3").click(function() {
+        $(".iframe").attr("src", "https://www.youtube.com/embed/Pdgk3ERKdug");
+    });
+});
+
+</script>
 </head>
 <body>
     <header id="header" class="wrapper">
@@ -27,21 +46,29 @@
             <div class="cinema3">映画と自転車</div>
             <ul class="aa">
                 <li>
-                <a href= "cycycle/index.html"><img src="image/1.jpeg" alt="写真" width="300" height="200" /></a> 
+                  <a id="btnChange"><img src="image/1.jpeg" alt="写真" width="300" height="200" /></a>
+                <a href= "cycycle/index.html">
                 <h3>マイインターン</h3>
                 <p>女性社長ジュールズ（アン・ハサウェイ）が<br>高齢者インターンで雇用した70才の部下ベン<br>（ロバート・デ・ニーロ）という、普通なら<br>出会わない2人に友情が芽生える物語。</p>
+                </a>
                 </li>
                 <li>
-                <a href="cycycle/index.html"><img src="image/4.jpeg" alt="写真" width="300" height="200" /></a> 
+                  <a id="btnChange2"><img src="image/4.jpeg" alt="写真" width="300" height="200" /></a>
+                <a href= "cycycle/index.html">
                 <h3>昼顔</h3>
                 <p>近年世間を賑わせている”不倫”がテーマの内容<br>で、大きく話題になっています。</p>
+                </a>
                 </li>
                 <li>
-            <a href="cycycle/index.html"><img src="image/3.jpeg" alt="写真" width="300" height="200" /></a> 
+                  <a id="btnChange3"><img src="image/3.jpeg" alt="写真" width="300" height="200" /></a>
+                <a href="cycycle/index3.html">
                 <h3>ET</h3>
                 <p>当時最先端の技術を駆使した映像と、少年と<br>宇宙人の切なくも暖かい、深い絆を描いた感動作</p>
+                </a>
                 </li>
             </ul>
+            <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/mkidOc7gy-g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+　　　　　　　<button id="btnChange">change</button>
     </main>
   <footer>
     <div id="page_top"><a href="#"></a></div>
