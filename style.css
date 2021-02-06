@@ -1,3 +1,123 @@
+
+body {
+    width: 1200px;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    text-align: center;
+}
+
+/* -------------
+ヘッダー
+--------------*/
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #333;
+    height: 100px;
+}
+
+#header ul {
+    display: flex;
+    padding: 10px 0;
+}
+#header li {
+    margin-left: 30px;
+}
+#header li a {
+    color: #24292e;
+}
+#header li a:hover {
+    opacity: 0.7;
+}
+
+.header-logo img {
+    width: 70px;
+    transform: scale(-1, 1) rotate(-20deg);
+}
+
+
+/* -------------
+フッター
+--------------*/
+footer {
+    background: #333;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+.footer-ul {
+    display: flex;
+}
+.footer-ul li a, .footer-ul li a:active, .footer-ul li a:hover, .footer-ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-ul li:first-child {
+    border-left: none;
+}
+
+.footer-ul li {
+    padding: 10px;
+    border-left: 1px solid #fff;
+}
+
+
+
+
+
+
+/* -------------
+追従ボタン
+--------------*/
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background: #3f98ef;
+    opacity: 0.6;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+
 .cinema{
     position: relative;
     left: 450px;
@@ -28,4 +148,3 @@ ul.aa li {
    padding:10px;
    float: left;
   }
-  
