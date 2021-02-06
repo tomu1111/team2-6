@@ -10,6 +10,14 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+    color: #333;
+}
+
 main {
     height: 1280px;
     margin: 0 auto;
@@ -59,7 +67,7 @@ main {
 --------------*/
 footer {
     background: #333;
-    height: 120px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,4 +202,9 @@ ul.aa a{
 
 ul.aa div {
     font-size: 0.8rem;
+}
+
+.youtube {
+    margin: 50px auto;
+    text-align: center;
 }
