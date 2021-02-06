@@ -1,3 +1,31 @@
-h1{
-    color:red;
+.cinema{
+    position: relative;
+    left: 450px;
+    font: bold;
+    color: violet;
+
 }
+.cinema2{
+    position: relative;
+    left: 350px;
+    padding: 20px;
+    font-size: 20px;
+}
+.cinema3{
+    position: relative;
+    left: 470px;
+    font: bold;
+    color: violet;
+}
+h3{
+    color:rgb(114, 52, 165);
+    text-align: center;
+}
+p{
+    font-size: 13px;
+}
+ul.aa li {
+   padding:10px;
+   float: left;
+  }
+  
